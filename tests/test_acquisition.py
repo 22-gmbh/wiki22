@@ -62,6 +62,12 @@ class AcquisitionTests(unittest.TestCase):
         c=self.catalog();d=LibraryDownloads(self.s,[c]);d.stop.set()
         with self.assertRaises(Paused):d.install(c)
         d.stop.clear();d.install(c);self.assertEqual(len(self.s.libraries()),1)
+    def test_pause_during_network_timeout_stays_paused(self):
+        c=self.catalog();d=LibraryDownloads(self.s,[c])
+        def interrupted(*args,**kwargs):
+            d.stop.set();raise TimeoutError('test timeout')
+        with patch.object(d.opener,'open',side_effect=interrupted):d._run(c)
+        self.assertEqual(d.status()['status'],'paused')
     def test_disk_space(self):
         c=self.catalog();d=LibraryDownloads(self.s,[c])
         with patch('wiki22.library_download.shutil.disk_usage') as usage:

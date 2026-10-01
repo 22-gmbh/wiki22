@@ -90,7 +90,11 @@ class LibraryDownloads:
         except Paused:
             self.update(status='paused', message='In pausa. Puoi riprendere anche dopo aver riaperto Wiki22.')
         except Exception as e:
-            self.update(status='error', message=str(e) or 'Download interrotto. Puoi riprendere.')
+            if self.stop.is_set():
+                self.update(status='paused', message='In pausa. Puoi riprendere anche dopo aver riaperto Wiki22.')
+            else:
+                message = 'La connessione si è interrotta. Premi Riprendi: i dati già scaricati sono conservati.' if isinstance(e, OSError) else str(e)
+                self.update(status='error', message=message or 'Download interrotto. Puoi riprendere.')
 
     def install(self, c):
         # Directory and file names come only from the bundled catalog, never the HTTP client.
@@ -136,7 +140,13 @@ class LibraryDownloads:
                         expected = f'bytes {start}-{end}/{c["archive_bytes"]}'
                         if r.status != 206 or r.headers.get('Content-Range') != expected or r.headers.get('Content-Encoding', 'identity') != 'identity':
                             raise ValueError('Il server non conferma la ripresa del download.')
-                        data = r.read(count+1)
+                        data = bytearray()
+                        while len(data) < count:
+                            if self.stop.is_set():
+                                raise Paused()
+                            block = r.read(min(65536,count-len(data)))
+                            if not block:break
+                            data.extend(block)
                         if len(data) != count:
                             raise ValueError('Trasferimento incompleto. Premi Riprendi.')
                     out.write(data); out.flush(); offset += count
