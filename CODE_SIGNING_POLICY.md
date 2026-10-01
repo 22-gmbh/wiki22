@@ -1,6 +1,6 @@
 # Code signing policy
 
-Status: **preparing an application; not approved or signed by SignPath yet**.
+Status: **application submitted on 2026-10-02; awaiting assessment, not approved or signed by SignPath yet**.
 
 Wiki22 is maintained by 22 GmbH. The proposed maintainer, reviewer and signing
 approver is Flavio Cristiano, GitHub account `flaviocristiano-collab`.

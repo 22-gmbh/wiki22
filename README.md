@@ -12,7 +12,7 @@ Wikipedia italiana contiene 1.984.914 voci. Wikipedia, l'interprete Python e i
 dati personali non sono conservati in questo repository.
 
 Gli installer storici 1.9.0 disponibili sul sito sono **privi di firma**. La
-candidatura a SignPath Foundation è in preparazione: non è stata ancora
+candidatura a SignPath Foundation è stata inviata il 2 ottobre 2026: non è stata ancora
 approvata e questo repository non rappresenta una distribuzione firmata.
 Il prodotto storico Windows è stato collaudato in Wine, non su hardware
 Windows reale. Le nuove compilazioni devono essere verificate separatamente.
