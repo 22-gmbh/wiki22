@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pfx
+*.p12
+*.key
+build/
+dist/
+runtime/
+Biblioteca/
+Dati-personali/.runtime/
+Dati-personali/Finestra/
+Dati-personali/data/imports/
+.venv/

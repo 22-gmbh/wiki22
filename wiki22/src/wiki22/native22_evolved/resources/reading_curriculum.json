@@ -1,0 +1,310 @@
+{
+  "schema": "ai22.testi_apprendimento.v1",
+  "documenti": [
+    {
+      "SOURCE_REF": "T001",
+      "testo": "Roma è una città. Italia è un paese.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T002",
+      "testo": "Parigi è una città. Francia è un paese.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T003",
+      "testo": "Berlino è una città. Germania è un paese.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T004",
+      "testo": "Roma è la capitale d'Italia.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T005",
+      "testo": "Parigi è la capitale della Francia.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T006",
+      "testo": "Berlino è la capitale della Germania.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T007",
+      "testo": "Ancona è una città. Lecce è una città.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T008",
+      "testo": "Ancona è la capitale italiana della cultura nel 2028.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T009",
+      "testo": "Lecce è la capitale italiana della cultura nel 2029.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T010",
+      "testo": "Il denaro è il capitale economico dell'impresa.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T011",
+      "testo": "Il risparmio è il capitale economico della cooperativa.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T012",
+      "testo": "Ada è una persona. Milo è una persona.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T013",
+      "testo": "Nora è una persona. Neri è una persona.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T014",
+      "testo": "Pisa è una città. Firenze è una città.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T015",
+      "testo": "Ada è nata a Pisa.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T016",
+      "testo": "Milo è nato a Firenze.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T017",
+      "testo": "Pisa è situata in Italia.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T018",
+      "testo": "Firenze è situata in Italia.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T019",
+      "testo": "Lione è una città. Lione è situata in Francia.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T020",
+      "testo": "Nora è nata a Lione.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T021",
+      "testo": "Neri è il guardiano del faro.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T022",
+      "testo": "Milo è il guardiano del museo.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T023",
+      "testo": "Ada è la custode della torre.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T024",
+      "testo": "Nora è la custode della galleria.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T025",
+      "testo": "custode significa guardiano.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T026",
+      "testo": "guardiano è sinonimo di custode.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T027",
+      "testo": "La gru selvatica è un uccello.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T028",
+      "testo": "La gru bianca è un uccello.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T029",
+      "testo": "La gru meccanica è una macchina.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T030",
+      "testo": "La gru industriale è una macchina.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T031",
+      "testo": "La gru è un uccello.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T032",
+      "testo": "La gru è una macchina.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T033",
+      "testo": "La gru è al porto.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T034",
+      "testo": "La gru meccanica è al porto.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T035",
+      "testo": "La gru selvatica è al fiume.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T036",
+      "testo": "Nora scolpisce una statua.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T037",
+      "testo": "Ada scolpisce un busto.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T038",
+      "testo": "Milo scolpisce una figura.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T039",
+      "testo": "Neri custodisce il faro.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T040",
+      "testo": "Milo custodisce il museo.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T041",
+      "testo": "Ada custodisce la torre.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T042",
+      "testo": "Nora legge il libro.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T043",
+      "testo": "Milo legge un testo.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T044",
+      "testo": "Nora è la direttrice della galleria.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T045",
+      "testo": "Ada è la direttrice della biblioteca.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T046",
+      "testo": "Il faro è il segnale della costa.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T047",
+      "testo": "La lanterna è il segnale del sentiero.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T048",
+      "testo": "Il ponte è il collegamento del villaggio.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T049",
+      "testo": "Il tunnel è il collegamento della città.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T050",
+      "testo": "Milo non è il guardiano della torre.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T051",
+      "testo": "Neri non è il guardiano della galleria.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T052",
+      "testo": "Ada era la custode del museo nel 2020.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T053",
+      "testo": "Nora era la custode del faro nel 2021.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T054",
+      "testo": "Nora è una persona. Lei legge una lettera.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T055",
+      "testo": "Milo è una persona. Lui legge un libro.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T056",
+      "testo": "Aster è un paese. Borea è un paese.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T057",
+      "testo": "Alba è una città. Brina è una città.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T058",
+      "testo": "Alba è la capitale di Aster.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T059",
+      "testo": "Brina è la capitale di Borea.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T060",
+      "testo": "Aster è un paese. Alba è la capitale di Aster.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    },
+    {
+      "SOURCE_REF": "T061",
+      "testo": "Brina è una città. Brina è la capitale di Borea.",
+      "statuto": "CORPUS_DIDATTICO_CONTROLLATO; non feed di notizie"
+    }
+  ]
+}

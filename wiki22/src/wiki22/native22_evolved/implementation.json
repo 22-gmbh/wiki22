@@ -1,0 +1,20 @@
+{
+  "schema": "wiki22.native.extension.identity.v1",
+  "version": "AI22_V018_NATIVE_EXTENSION_CANDIDATE_04",
+  "base": "AI22_V017_RC01_UNCHANGED",
+  "model_calls_required": 0,
+  "files": {
+    "__init__.py": "26820881288EA13E1421B1EDB52D002C675E802B4D9687DE2A47633EF6254264",
+    "identity.py": "1EE7EEC631EE9AC9BC6518BA012670A102AF954D3C7D3ACB92D4A213A4ABD1C1",
+    "language_engine.py": "84E3C0EAC7897FFADFB42A5727ED409422690BC3828F2ABF1C15FD1874831B64",
+    "resources/grammatica.json": "A63A5C7F4F73DFDEE821CA82E1097CEF2439FCB62D73ADC178CC90B11A7D4328",
+    "resources/lessico_seme.json": "9017E23EBD38E694DD23075B6727E2847476C5FD3322E2C3B8FB2F43D0D62A89",
+    "resources/reading_curriculum.json": "D37E49F6A02A6D81120D112CE23F1D78C630CA38A8FDEAC2BBD72F4BDAAB382B",
+    "resources/regole_ragionamento.json": "96A902940C8A8956B86CC78AFB53448D924229755C972C4624D48996A75BC581",
+    "session.py": "D12F479822D8A8E2A6BA41548E63FF95C69AFFA1B5DB72E27741C2CA53B800FB"
+  },
+  "predecessor": "AI22_V018_NATIVE_EXTENSION_CANDIDATE_03",
+  "changes": "G09: explicit leading-year normalization with preserved polarity and source span; ambiguous multiple temporal scopes refused",
+  "scope": "Bounded simple statements with explicit comma-delimited fronted year; no general subordinate grammar",
+  "status": "FROZEN_BOUNDED_G09_SUCCESSOR"
+}

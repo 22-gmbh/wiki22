@@ -1,0 +1,39 @@
+{
+  "schema": "ai22.regole_esplicite.v1",
+  "regole": [
+    {
+      "REGOLA_ID": "R-PAESE-NASCITA",
+      "SE": [
+        {
+          "predicato": "nascere_a",
+          "argomenti": [
+            "X",
+            "Y"
+          ]
+        },
+        {
+          "predicato": "situare_in",
+          "argomenti": [
+            "Y",
+            "Z"
+          ]
+        }
+      ],
+      "ALLORA": {
+        "predicato": "nascere_nel_paese",
+        "argomenti": [
+          "X",
+          "Z"
+        ]
+      },
+      "condizioni": [
+        "premesse positive",
+        "premesse documentate",
+        "tipo di Y=CITTA",
+        "tipo di Z=PAESE",
+        "tempi espliciti compatibili"
+      ],
+      "nota": "Regola dichiarata, NON appresa automaticamente; nessun fatto inserito."
+    }
+  ]
+}

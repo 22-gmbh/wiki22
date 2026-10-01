@@ -1,0 +1,1886 @@
+{
+  "schema": "ai22.lessico_seme.v1",
+  "criterio": "Parole funzionali e lessico elementare; nessuna entità o relazione-obiettivo precompilata.",
+  "voci": {
+    "il": {
+      "FORMA": "il",
+      "LEMMA_CANDIDATO": "il",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "lo": {
+      "FORMA": "lo",
+      "LEMMA_CANDIDATO": "lo",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "un": {
+      "FORMA": "un",
+      "LEMMA_CANDIDATO": "un",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "uno": {
+      "FORMA": "uno",
+      "LEMMA_CANDIDATO": "uno",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "la": {
+      "FORMA": "la",
+      "LEMMA_CANDIDATO": "la",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "FEMMINILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "una": {
+      "FORMA": "una",
+      "LEMMA_CANDIDATO": "una",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "FEMMINILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "i": {
+      "FORMA": "i",
+      "LEMMA_CANDIDATO": "i",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "PLURALE"
+      }
+    },
+    "gli": {
+      "FORMA": "gli",
+      "LEMMA_CANDIDATO": "gli",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "MASCHILE",
+        "numero": "PLURALE"
+      }
+    },
+    "le": {
+      "FORMA": "le",
+      "LEMMA_CANDIDATO": "le",
+      "CATEGORIA_GRAMMATICALE": "ARTICOLO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "genere": "FEMMINILE",
+        "numero": "PLURALE"
+      }
+    },
+    "di": {
+      "FORMA": "di",
+      "LEMMA_CANDIDATO": "di",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "a": {
+      "FORMA": "a",
+      "LEMMA_CANDIDATO": "a",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "da": {
+      "FORMA": "da",
+      "LEMMA_CANDIDATO": "da",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "in": {
+      "FORMA": "in",
+      "LEMMA_CANDIDATO": "in",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "con": {
+      "FORMA": "con",
+      "LEMMA_CANDIDATO": "con",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "su": {
+      "FORMA": "su",
+      "LEMMA_CANDIDATO": "su",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "per": {
+      "FORMA": "per",
+      "LEMMA_CANDIDATO": "per",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "tra": {
+      "FORMA": "tra",
+      "LEMMA_CANDIDATO": "tra",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fra": {
+      "FORMA": "fra",
+      "LEMMA_CANDIDATO": "fra",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "d": {
+      "FORMA": "d",
+      "LEMMA_CANDIDATO": "d",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "al": {
+      "FORMA": "al",
+      "LEMMA_CANDIDATO": "al",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "allo": {
+      "FORMA": "allo",
+      "LEMMA_CANDIDATO": "allo",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "alla": {
+      "FORMA": "alla",
+      "LEMMA_CANDIDATO": "alla",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ai": {
+      "FORMA": "ai",
+      "LEMMA_CANDIDATO": "ai",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "agli": {
+      "FORMA": "agli",
+      "LEMMA_CANDIDATO": "agli",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "alle": {
+      "FORMA": "alle",
+      "LEMMA_CANDIDATO": "alle",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "del": {
+      "FORMA": "del",
+      "LEMMA_CANDIDATO": "del",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dello": {
+      "FORMA": "dello",
+      "LEMMA_CANDIDATO": "dello",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "della": {
+      "FORMA": "della",
+      "LEMMA_CANDIDATO": "della",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dei": {
+      "FORMA": "dei",
+      "LEMMA_CANDIDATO": "dei",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "degli": {
+      "FORMA": "degli",
+      "LEMMA_CANDIDATO": "degli",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "delle": {
+      "FORMA": "delle",
+      "LEMMA_CANDIDATO": "delle",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nel": {
+      "FORMA": "nel",
+      "LEMMA_CANDIDATO": "nel",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nello": {
+      "FORMA": "nello",
+      "LEMMA_CANDIDATO": "nello",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nella": {
+      "FORMA": "nella",
+      "LEMMA_CANDIDATO": "nella",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nei": {
+      "FORMA": "nei",
+      "LEMMA_CANDIDATO": "nei",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "negli": {
+      "FORMA": "negli",
+      "LEMMA_CANDIDATO": "negli",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nelle": {
+      "FORMA": "nelle",
+      "LEMMA_CANDIDATO": "nelle",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dal": {
+      "FORMA": "dal",
+      "LEMMA_CANDIDATO": "dal",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dallo": {
+      "FORMA": "dallo",
+      "LEMMA_CANDIDATO": "dallo",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dalla": {
+      "FORMA": "dalla",
+      "LEMMA_CANDIDATO": "dalla",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dai": {
+      "FORMA": "dai",
+      "LEMMA_CANDIDATO": "dai",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dagli": {
+      "FORMA": "dagli",
+      "LEMMA_CANDIDATO": "dagli",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dalle": {
+      "FORMA": "dalle",
+      "LEMMA_CANDIDATO": "dalle",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sul": {
+      "FORMA": "sul",
+      "LEMMA_CANDIDATO": "sul",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sullo": {
+      "FORMA": "sullo",
+      "LEMMA_CANDIDATO": "sullo",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sulla": {
+      "FORMA": "sulla",
+      "LEMMA_CANDIDATO": "sulla",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sui": {
+      "FORMA": "sui",
+      "LEMMA_CANDIDATO": "sui",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sugli": {
+      "FORMA": "sugli",
+      "LEMMA_CANDIDATO": "sugli",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sulle": {
+      "FORMA": "sulle",
+      "LEMMA_CANDIDATO": "sulle",
+      "CATEGORIA_GRAMMATICALE": "PREPOSIZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "io": {
+      "FORMA": "io",
+      "LEMMA_CANDIDATO": "io",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "tu": {
+      "FORMA": "tu",
+      "LEMMA_CANDIDATO": "tu",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "egli": {
+      "FORMA": "egli",
+      "LEMMA_CANDIDATO": "egli",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ella": {
+      "FORMA": "ella",
+      "LEMMA_CANDIDATO": "ella",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lui": {
+      "FORMA": "lui",
+      "LEMMA_CANDIDATO": "lui",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lei": {
+      "FORMA": "lei",
+      "LEMMA_CANDIDATO": "lei",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "noi": {
+      "FORMA": "noi",
+      "LEMMA_CANDIDATO": "noi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "voi": {
+      "FORMA": "voi",
+      "LEMMA_CANDIDATO": "voi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "essi": {
+      "FORMA": "essi",
+      "LEMMA_CANDIDATO": "essi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "esse": {
+      "FORMA": "esse",
+      "LEMMA_CANDIDATO": "esse",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "loro": {
+      "FORMA": "loro",
+      "LEMMA_CANDIDATO": "loro",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mi": {
+      "FORMA": "mi",
+      "LEMMA_CANDIDATO": "mi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ti": {
+      "FORMA": "ti",
+      "LEMMA_CANDIDATO": "ti",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "si": {
+      "FORMA": "si",
+      "LEMMA_CANDIDATO": "si",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ci": {
+      "FORMA": "ci",
+      "LEMMA_CANDIDATO": "ci",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vi": {
+      "FORMA": "vi",
+      "LEMMA_CANDIDATO": "vi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "questo": {
+      "FORMA": "questo",
+      "LEMMA_CANDIDATO": "questo",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "questa": {
+      "FORMA": "questa",
+      "LEMMA_CANDIDATO": "questa",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "questi": {
+      "FORMA": "questi",
+      "LEMMA_CANDIDATO": "questi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "queste": {
+      "FORMA": "queste",
+      "LEMMA_CANDIDATO": "queste",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quello": {
+      "FORMA": "quello",
+      "LEMMA_CANDIDATO": "quello",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quella": {
+      "FORMA": "quella",
+      "LEMMA_CANDIDATO": "quella",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quelli": {
+      "FORMA": "quelli",
+      "LEMMA_CANDIDATO": "quelli",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quelle": {
+      "FORMA": "quelle",
+      "LEMMA_CANDIDATO": "quelle",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "chi": {
+      "FORMA": "chi",
+      "LEMMA_CANDIDATO": "chi",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "che": {
+      "FORMA": "che",
+      "LEMMA_CANDIDATO": "che",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "cui": {
+      "FORMA": "cui",
+      "LEMMA_CANDIDATO": "cui",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "qualcosa": {
+      "FORMA": "qualcosa",
+      "LEMMA_CANDIDATO": "qualcosa",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "qualcuno": {
+      "FORMA": "qualcuno",
+      "LEMMA_CANDIDATO": "qualcuno",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "niente": {
+      "FORMA": "niente",
+      "LEMMA_CANDIDATO": "niente",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nessuno": {
+      "FORMA": "nessuno",
+      "LEMMA_CANDIDATO": "nessuno",
+      "CATEGORIA_GRAMMATICALE": "PRONOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "e": {
+      "FORMA": "e",
+      "LEMMA_CANDIDATO": "e",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "o": {
+      "FORMA": "o",
+      "LEMMA_CANDIDATO": "o",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ma": {
+      "FORMA": "ma",
+      "LEMMA_CANDIDATO": "ma",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "oppure": {
+      "FORMA": "oppure",
+      "LEMMA_CANDIDATO": "oppure",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "perché": {
+      "FORMA": "perché",
+      "LEMMA_CANDIDATO": "perché",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "se": {
+      "FORMA": "se",
+      "LEMMA_CANDIDATO": "se",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quando": {
+      "FORMA": "quando",
+      "LEMMA_CANDIDATO": "quando",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mentre": {
+      "FORMA": "mentre",
+      "LEMMA_CANDIDATO": "mentre",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quindi": {
+      "FORMA": "quindi",
+      "LEMMA_CANDIDATO": "quindi",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "anche": {
+      "FORMA": "anche",
+      "LEMMA_CANDIDATO": "anche",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "né": {
+      "FORMA": "né",
+      "LEMMA_CANDIDATO": "né",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sia": {
+      "FORMA": "sia",
+      "LEMMA_CANDIDATO": "sia",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "benché": {
+      "FORMA": "benché",
+      "LEMMA_CANDIDATO": "benché",
+      "CATEGORIA_GRAMMATICALE": "CONGIUNZIONE",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "non": {
+      "FORMA": "non",
+      "LEMMA_CANDIDATO": "non",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sì": {
+      "FORMA": "sì",
+      "LEMMA_CANDIDATO": "sì",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "no": {
+      "FORMA": "no",
+      "LEMMA_CANDIDATO": "no",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "molto": {
+      "FORMA": "molto",
+      "LEMMA_CANDIDATO": "molto",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "poco": {
+      "FORMA": "poco",
+      "LEMMA_CANDIDATO": "poco",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "più": {
+      "FORMA": "più",
+      "LEMMA_CANDIDATO": "più",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "meno": {
+      "FORMA": "meno",
+      "LEMMA_CANDIDATO": "meno",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "sempre": {
+      "FORMA": "sempre",
+      "LEMMA_CANDIDATO": "sempre",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mai": {
+      "FORMA": "mai",
+      "LEMMA_CANDIDATO": "mai",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "spesso": {
+      "FORMA": "spesso",
+      "LEMMA_CANDIDATO": "spesso",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "bene": {
+      "FORMA": "bene",
+      "LEMMA_CANDIDATO": "bene",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "male": {
+      "FORMA": "male",
+      "LEMMA_CANDIDATO": "male",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "qui": {
+      "FORMA": "qui",
+      "LEMMA_CANDIDATO": "qui",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "qua": {
+      "FORMA": "qua",
+      "LEMMA_CANDIDATO": "qua",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lì": {
+      "FORMA": "lì",
+      "LEMMA_CANDIDATO": "lì",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "là": {
+      "FORMA": "là",
+      "LEMMA_CANDIDATO": "là",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "oggi": {
+      "FORMA": "oggi",
+      "LEMMA_CANDIDATO": "oggi",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ieri": {
+      "FORMA": "ieri",
+      "LEMMA_CANDIDATO": "ieri",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "domani": {
+      "FORMA": "domani",
+      "LEMMA_CANDIDATO": "domani",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "prima": {
+      "FORMA": "prima",
+      "LEMMA_CANDIDATO": "prima",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dopo": {
+      "FORMA": "dopo",
+      "LEMMA_CANDIDATO": "dopo",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dentro": {
+      "FORMA": "dentro",
+      "LEMMA_CANDIDATO": "dentro",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fuori": {
+      "FORMA": "fuori",
+      "LEMMA_CANDIDATO": "fuori",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vicino": {
+      "FORMA": "vicino",
+      "LEMMA_CANDIDATO": "vicino",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lontano": {
+      "FORMA": "lontano",
+      "LEMMA_CANDIDATO": "lontano",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "insieme": {
+      "FORMA": "insieme",
+      "LEMMA_CANDIDATO": "insieme",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "soltanto": {
+      "FORMA": "soltanto",
+      "LEMMA_CANDIDATO": "soltanto",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "forse": {
+      "FORMA": "forse",
+      "LEMMA_CANDIDATO": "forse",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "già": {
+      "FORMA": "già",
+      "LEMMA_CANDIDATO": "già",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "ancora": {
+      "FORMA": "ancora",
+      "LEMMA_CANDIDATO": "ancora",
+      "CATEGORIA_GRAMMATICALE": "AVVERBIO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quale": {
+      "FORMA": "quale",
+      "LEMMA_CANDIDATO": "quale",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quali": {
+      "FORMA": "quali",
+      "LEMMA_CANDIDATO": "quali",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quanto": {
+      "FORMA": "quanto",
+      "LEMMA_CANDIDATO": "quanto",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quanta": {
+      "FORMA": "quanta",
+      "LEMMA_CANDIDATO": "quanta",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quanti": {
+      "FORMA": "quanti",
+      "LEMMA_CANDIDATO": "quanti",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "quante": {
+      "FORMA": "quante",
+      "LEMMA_CANDIDATO": "quante",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "dove": {
+      "FORMA": "dove",
+      "LEMMA_CANDIDATO": "dove",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "come": {
+      "FORMA": "come",
+      "LEMMA_CANDIDATO": "come",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "cosa": {
+      "FORMA": "cosa",
+      "LEMMA_CANDIDATO": "cosa",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "qual": {
+      "FORMA": "qual",
+      "LEMMA_CANDIDATO": "qual",
+      "CATEGORIA_GRAMMATICALE": "INTERROGATIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "persona": {
+      "FORMA": "persona",
+      "LEMMA_CANDIDATO": "persona",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "persone": {
+      "FORMA": "persone",
+      "LEMMA_CANDIDATO": "persone",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "città": {
+      "FORMA": "città",
+      "LEMMA_CANDIDATO": "città",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "paese": {
+      "FORMA": "paese",
+      "LEMMA_CANDIDATO": "paese",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "paesi": {
+      "FORMA": "paesi",
+      "LEMMA_CANDIDATO": "paesi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "luogo": {
+      "FORMA": "luogo",
+      "LEMMA_CANDIDATO": "luogo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "luoghi": {
+      "FORMA": "luoghi",
+      "LEMMA_CANDIDATO": "luoghi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "organizzazione": {
+      "FORMA": "organizzazione",
+      "LEMMA_CANDIDATO": "organizzazione",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "organizzazioni": {
+      "FORMA": "organizzazioni",
+      "LEMMA_CANDIDATO": "organizzazioni",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "opera": {
+      "FORMA": "opera",
+      "LEMMA_CANDIDATO": "opera",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "opere": {
+      "FORMA": "opere",
+      "LEMMA_CANDIDATO": "opere",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "anno": {
+      "FORMA": "anno",
+      "LEMMA_CANDIDATO": "anno",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "anni": {
+      "FORMA": "anni",
+      "LEMMA_CANDIDATO": "anni",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "numero": {
+      "FORMA": "numero",
+      "LEMMA_CANDIDATO": "numero",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "numeri": {
+      "FORMA": "numeri",
+      "LEMMA_CANDIDATO": "numeri",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "concetto": {
+      "FORMA": "concetto",
+      "LEMMA_CANDIDATO": "concetto",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "concetti": {
+      "FORMA": "concetti",
+      "LEMMA_CANDIDATO": "concetti",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nome": {
+      "FORMA": "nome",
+      "LEMMA_CANDIDATO": "nome",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nomi": {
+      "FORMA": "nomi",
+      "LEMMA_CANDIDATO": "nomi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "parola": {
+      "FORMA": "parola",
+      "LEMMA_CANDIDATO": "parola",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "parole": {
+      "FORMA": "parole",
+      "LEMMA_CANDIDATO": "parole",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "frase": {
+      "FORMA": "frase",
+      "LEMMA_CANDIDATO": "frase",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "frasi": {
+      "FORMA": "frasi",
+      "LEMMA_CANDIDATO": "frasi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "testo": {
+      "FORMA": "testo",
+      "LEMMA_CANDIDATO": "testo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "testi": {
+      "FORMA": "testi",
+      "LEMMA_CANDIDATO": "testi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fonte": {
+      "FORMA": "fonte",
+      "LEMMA_CANDIDATO": "fonte",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fonti": {
+      "FORMA": "fonti",
+      "LEMMA_CANDIDATO": "fonti",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "regola": {
+      "FORMA": "regola",
+      "LEMMA_CANDIDATO": "regola",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "regole": {
+      "FORMA": "regole",
+      "LEMMA_CANDIDATO": "regole",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "esempio": {
+      "FORMA": "esempio",
+      "LEMMA_CANDIDATO": "esempio",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "esempi": {
+      "FORMA": "esempi",
+      "LEMMA_CANDIDATO": "esempi",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "domanda": {
+      "FORMA": "domanda",
+      "LEMMA_CANDIDATO": "domanda",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "domande": {
+      "FORMA": "domande",
+      "LEMMA_CANDIDATO": "domande",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "risposta": {
+      "FORMA": "risposta",
+      "LEMMA_CANDIDATO": "risposta",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "risposte": {
+      "FORMA": "risposte",
+      "LEMMA_CANDIDATO": "risposte",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "casa": {
+      "FORMA": "casa",
+      "LEMMA_CANDIDATO": "casa",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "case": {
+      "FORMA": "case",
+      "LEMMA_CANDIDATO": "case",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "uomo": {
+      "FORMA": "uomo",
+      "LEMMA_CANDIDATO": "uomo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "donna": {
+      "FORMA": "donna",
+      "LEMMA_CANDIDATO": "donna",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "bambino": {
+      "FORMA": "bambino",
+      "LEMMA_CANDIDATO": "bambino",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "bambina": {
+      "FORMA": "bambina",
+      "LEMMA_CANDIDATO": "bambina",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "amico": {
+      "FORMA": "amico",
+      "LEMMA_CANDIDATO": "amico",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "amica": {
+      "FORMA": "amica",
+      "LEMMA_CANDIDATO": "amica",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "animale": {
+      "FORMA": "animale",
+      "LEMMA_CANDIDATO": "animale",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "animali": {
+      "FORMA": "animali",
+      "LEMMA_CANDIDATO": "animali",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "uccello": {
+      "FORMA": "uccello",
+      "LEMMA_CANDIDATO": "uccello",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "uccelli": {
+      "FORMA": "uccelli",
+      "LEMMA_CANDIDATO": "uccelli",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "macchina": {
+      "FORMA": "macchina",
+      "LEMMA_CANDIDATO": "macchina",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "macchine": {
+      "FORMA": "macchine",
+      "LEMMA_CANDIDATO": "macchine",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "acqua": {
+      "FORMA": "acqua",
+      "LEMMA_CANDIDATO": "acqua",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "aria": {
+      "FORMA": "aria",
+      "LEMMA_CANDIDATO": "aria",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "terra": {
+      "FORMA": "terra",
+      "LEMMA_CANDIDATO": "terra",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mare": {
+      "FORMA": "mare",
+      "LEMMA_CANDIDATO": "mare",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "giorno": {
+      "FORMA": "giorno",
+      "LEMMA_CANDIDATO": "giorno",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "notte": {
+      "FORMA": "notte",
+      "LEMMA_CANDIDATO": "notte",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "tempo": {
+      "FORMA": "tempo",
+      "LEMMA_CANDIDATO": "tempo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "parte": {
+      "FORMA": "parte",
+      "LEMMA_CANDIDATO": "parte",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "modo": {
+      "FORMA": "modo",
+      "LEMMA_CANDIDATO": "modo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "volta": {
+      "FORMA": "volta",
+      "LEMMA_CANDIDATO": "volta",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "tutto": {
+      "FORMA": "tutto",
+      "LEMMA_CANDIDATO": "tutto",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "libro": {
+      "FORMA": "libro",
+      "LEMMA_CANDIDATO": "libro",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "libri": {
+      "FORMA": "libri",
+      "LEMMA_CANDIDATO": "libri",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "denaro": {
+      "FORMA": "denaro",
+      "LEMMA_CANDIDATO": "denaro",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lettera": {
+      "FORMA": "lettera",
+      "LEMMA_CANDIDATO": "lettera",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lettere": {
+      "FORMA": "lettere",
+      "LEMMA_CANDIDATO": "lettere",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "lavoro": {
+      "FORMA": "lavoro",
+      "LEMMA_CANDIDATO": "lavoro",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mano": {
+      "FORMA": "mano",
+      "LEMMA_CANDIDATO": "mano",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "mani": {
+      "FORMA": "mani",
+      "LEMMA_CANDIDATO": "mani",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fatto": {
+      "FORMA": "fatto",
+      "LEMMA_CANDIDATO": "fatto",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "fatti": {
+      "FORMA": "fatti",
+      "LEMMA_CANDIDATO": "fatti",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "punto": {
+      "FORMA": "punto",
+      "LEMMA_CANDIDATO": "punto",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "punti": {
+      "FORMA": "punti",
+      "LEMMA_CANDIDATO": "punti",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "cose": {
+      "FORMA": "cose",
+      "LEMMA_CANDIDATO": "cose",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "grande": {
+      "FORMA": "grande",
+      "LEMMA_CANDIDATO": "grande",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "grandi": {
+      "FORMA": "grandi",
+      "LEMMA_CANDIDATO": "grandi",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "piccolo": {
+      "FORMA": "piccolo",
+      "LEMMA_CANDIDATO": "piccolo",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "piccola": {
+      "FORMA": "piccola",
+      "LEMMA_CANDIDATO": "piccola",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "piccoli": {
+      "FORMA": "piccoli",
+      "LEMMA_CANDIDATO": "piccoli",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "piccole": {
+      "FORMA": "piccole",
+      "LEMMA_CANDIDATO": "piccole",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nuovo": {
+      "FORMA": "nuovo",
+      "LEMMA_CANDIDATO": "nuovo",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nuova": {
+      "FORMA": "nuova",
+      "LEMMA_CANDIDATO": "nuova",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nuovi": {
+      "FORMA": "nuovi",
+      "LEMMA_CANDIDATO": "nuovi",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nuove": {
+      "FORMA": "nuove",
+      "LEMMA_CANDIDATO": "nuove",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vecchio": {
+      "FORMA": "vecchio",
+      "LEMMA_CANDIDATO": "vecchio",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vecchia": {
+      "FORMA": "vecchia",
+      "LEMMA_CANDIDATO": "vecchia",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "buono": {
+      "FORMA": "buono",
+      "LEMMA_CANDIDATO": "buono",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "buona": {
+      "FORMA": "buona",
+      "LEMMA_CANDIDATO": "buona",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vero": {
+      "FORMA": "vero",
+      "LEMMA_CANDIDATO": "vero",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "vera": {
+      "FORMA": "vera",
+      "LEMMA_CANDIDATO": "vera",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "falso": {
+      "FORMA": "falso",
+      "LEMMA_CANDIDATO": "falso",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "falsa": {
+      "FORMA": "falsa",
+      "LEMMA_CANDIDATO": "falsa",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "noto": {
+      "FORMA": "noto",
+      "LEMMA_CANDIDATO": "noto",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "nota": {
+      "FORMA": "nota",
+      "LEMMA_CANDIDATO": "nota",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "italiano": {
+      "FORMA": "italiano",
+      "LEMMA_CANDIDATO": "italiano",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "italiana": {
+      "FORMA": "italiana",
+      "LEMMA_CANDIDATO": "italiana",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "italiani": {
+      "FORMA": "italiani",
+      "LEMMA_CANDIDATO": "italiani",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "italiane": {
+      "FORMA": "italiane",
+      "LEMMA_CANDIDATO": "italiane",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "stesso": {
+      "FORMA": "stesso",
+      "LEMMA_CANDIDATO": "stesso",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "stessa": {
+      "FORMA": "stessa",
+      "LEMMA_CANDIDATO": "stessa",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "altro": {
+      "FORMA": "altro",
+      "LEMMA_CANDIDATO": "altro",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "altra": {
+      "FORMA": "altra",
+      "LEMMA_CANDIDATO": "altra",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "certo": {
+      "FORMA": "certo",
+      "LEMMA_CANDIDATO": "certo",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "certa": {
+      "FORMA": "certa",
+      "LEMMA_CANDIDATO": "certa",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "possibile": {
+      "FORMA": "possibile",
+      "LEMMA_CANDIDATO": "possibile",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "uguale": {
+      "FORMA": "uguale",
+      "LEMMA_CANDIDATO": "uguale",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "diverso": {
+      "FORMA": "diverso",
+      "LEMMA_CANDIDATO": "diverso",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "diversa": {
+      "FORMA": "diversa",
+      "LEMMA_CANDIDATO": "diversa",
+      "CATEGORIA_GRAMMATICALE": "AGGETTIVO",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "essere": {
+      "FORMA": "essere",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "avere": {
+      "FORMA": "avere",
+      "LEMMA_CANDIDATO": "avere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "fare": {
+      "FORMA": "fare",
+      "LEMMA_CANDIDATO": "fare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "dire": {
+      "FORMA": "dire",
+      "LEMMA_CANDIDATO": "dire",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "andare": {
+      "FORMA": "andare",
+      "LEMMA_CANDIDATO": "andare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "venire": {
+      "FORMA": "venire",
+      "LEMMA_CANDIDATO": "venire",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "leggere": {
+      "FORMA": "leggere",
+      "LEMMA_CANDIDATO": "leggere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "scrivere": {
+      "FORMA": "scrivere",
+      "LEMMA_CANDIDATO": "scrivere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "vedere": {
+      "FORMA": "vedere",
+      "LEMMA_CANDIDATO": "vedere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "sapere": {
+      "FORMA": "sapere",
+      "LEMMA_CANDIDATO": "sapere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "potere": {
+      "FORMA": "potere",
+      "LEMMA_CANDIDATO": "potere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "dovere": {
+      "FORMA": "dovere",
+      "LEMMA_CANDIDATO": "dovere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "volere": {
+      "FORMA": "volere",
+      "LEMMA_CANDIDATO": "volere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "dare": {
+      "FORMA": "dare",
+      "LEMMA_CANDIDATO": "dare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "stare": {
+      "FORMA": "stare",
+      "LEMMA_CANDIDATO": "stare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "nascere": {
+      "FORMA": "nascere",
+      "LEMMA_CANDIDATO": "nascere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "situare": {
+      "FORMA": "situare",
+      "LEMMA_CANDIDATO": "situare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "INFINITO"
+      }
+    },
+    "è": {
+      "FORMA": "è",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "sono": {
+      "FORMA": "sono",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "era": {
+      "FORMA": "era",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "IMPERFETTO",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "erano": {
+      "FORMA": "erano",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "IMPERFETTO",
+        "persona": 3,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "fu": {
+      "FORMA": "fu",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PASSATO_REMOTO",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "eravamo": {
+      "FORMA": "eravamo",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "IMPERFETTO",
+        "persona": 1,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "sei": {
+      "FORMA": "sei",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 2,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "siamo": {
+      "FORMA": "siamo",
+      "LEMMA_CANDIDATO": "essere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 1,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "ha": {
+      "FORMA": "ha",
+      "LEMMA_CANDIDATO": "avere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "hanno": {
+      "FORMA": "hanno",
+      "LEMMA_CANDIDATO": "avere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "legge": {
+      "FORMA": "legge",
+      "LEMMA_CANDIDATO": "leggere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "leggono": {
+      "FORMA": "leggono",
+      "LEMMA_CANDIDATO": "leggere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "scrive": {
+      "FORMA": "scrive",
+      "LEMMA_CANDIDATO": "scrivere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "scrivono": {
+      "FORMA": "scrivono",
+      "LEMMA_CANDIDATO": "scrivere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "PLURALE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "significa": {
+      "FORMA": "significa",
+      "LEMMA_CANDIDATO": "significare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "tempo": "PRESENTE",
+        "persona": 3,
+        "numero": "SINGOLARE",
+        "modo": "INDICATIVO"
+      }
+    },
+    "nato": {
+      "FORMA": "nato",
+      "LEMMA_CANDIDATO": "nascere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "nata": {
+      "FORMA": "nata",
+      "LEMMA_CANDIDATO": "nascere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "FEMMINILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "nati": {
+      "FORMA": "nati",
+      "LEMMA_CANDIDATO": "nascere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "MASCHILE",
+        "numero": "PLURALE"
+      }
+    },
+    "nate": {
+      "FORMA": "nate",
+      "LEMMA_CANDIDATO": "nascere",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "FEMMINILE",
+        "numero": "PLURALE"
+      }
+    },
+    "situato": {
+      "FORMA": "situato",
+      "LEMMA_CANDIDATO": "situare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "MASCHILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "situata": {
+      "FORMA": "situata",
+      "LEMMA_CANDIDATO": "situare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "FEMMINILE",
+        "numero": "SINGOLARE"
+      }
+    },
+    "situati": {
+      "FORMA": "situati",
+      "LEMMA_CANDIDATO": "situare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "MASCHILE",
+        "numero": "PLURALE"
+      }
+    },
+    "situate": {
+      "FORMA": "situate",
+      "LEMMA_CANDIDATO": "situare",
+      "CATEGORIA_GRAMMATICALE": "VERBO",
+      "PROPRIETA_MORFOLOGICHE": {
+        "modo": "PARTICIPIO",
+        "tempo": "PASSATO",
+        "genere": "FEMMINILE",
+        "numero": "PLURALE"
+      }
+    },
+    "sinonimo": {
+      "FORMA": "sinonimo",
+      "LEMMA_CANDIDATO": "sinonimo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "termine": {
+      "FORMA": "termine",
+      "LEMMA_CANDIDATO": "termine",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "senso": {
+      "FORMA": "senso",
+      "LEMMA_CANDIDATO": "senso",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    },
+    "tipo": {
+      "FORMA": "tipo",
+      "LEMMA_CANDIDATO": "tipo",
+      "CATEGORIA_GRAMMATICALE": "NOME",
+      "PROPRIETA_MORFOLOGICHE": {}
+    }
+  }
+}

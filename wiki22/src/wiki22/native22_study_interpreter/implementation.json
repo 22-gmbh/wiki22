@@ -1,0 +1,33 @@
+{
+  "schema": "wiki22.native.extension.identity.v1",
+  "version": "AI22_V018_NATIVE_EXTENSION_CANDIDATE_14",
+  "base": "AI22_V017_RC01_UNCHANGED",
+  "files": {
+    "__init__.py": "26820881288EA13E1421B1EDB52D002C675E802B4D9687DE2A47633EF6254264",
+    "dependency_reader.py": "479EFE6148E5D15F246CE1D356CC9E7FE54A637F7C3EE95191B1A4E541EA624C",
+    "identity.py": "AE616507FC661BE012207BB2F72EE22FFCB9D421C7298CF2C3ED00D4DB340983",
+    "language_engine.py": "F7B276E1B3D41FBE16DF3799FACBF7F0FF11EFB9656E5F556A06E49495BD533D",
+    "resources/grammatica.json": "B6820DDEFE63CC17F3F0F7F492F3501C0BFC512B261204C1FBEA927929696BF8",
+    "resources/lessico_seme.json": "9017E23EBD38E694DD23075B6727E2847476C5FD3322E2C3B8FB2F43D0D62A89",
+    "resources/parser_runtime.json": "5BCF007251A9EF3906B527C4A9D0924319136158D626A423DF24E199E54134B7",
+    "resources/reading_curriculum.json": "D37E49F6A02A6D81120D112CE23F1D78C630CA38A8FDEAC2BBD72F4BDAAB382B",
+    "resources/regole_ragionamento.json": "A4E22F17A96CE13588D0B92C297A4A29C96DFE207CA6CB64EA84FE7AB3F162A3",
+    "session.py": "D12F479822D8A8E2A6BA41548E63FF95C69AFFA1B5DB72E27741C2CA53B800FB",
+    "discourse_graph.py": "F97D2B874324C2C41F60FCEA89C17884507C3A0FAB75B0DBB092ED5766B8C051",
+    "factuality.py": "037ABE907DA88FD9ED3F73FF2CA8E87A5FDFD4F3EEA8724F2702E3ACE100B73B",
+    "resources/factuality_weights.json": "48501DC3DA605255E1D41293061178F242CBBC8C66CBB3489F24CA70627EDDCD",
+    "study_reader.py": "02154EE2ABC2E02E9E4D562309BA59E4D98D793BBFE56D038A573ADD797B7651"
+  },
+  "predecessor": "AI22_V018_NATIVE_EXTENSION_CANDIDATE_13",
+  "changes": "Explicit Italian study request interpretation with source-bound grammatical analyses, separate from verified factual answers",
+  "scope": "Controlled extensions; no general C2 or human IQ claim",
+  "status": "FROZEN_RESEARCH_STUDY_ANALYSIS_NOT_GENERAL_QA",
+  "llm_calls_required": 0,
+  "non_llm_statistical_parser": true,
+  "research_scope": "Bounded proposition retraction graph and non-LLM learned factuality veto; not general comprehension",
+  "local_statistical_inference_required": true,
+  "statistical_components": [
+    "UDPipe1 Italian ISDT grammar parser",
+    "ModaFact averaged perceptron factuality veto"
+  ]
+}

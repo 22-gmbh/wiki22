@@ -1,0 +1,74 @@
+{
+  "wheel": {
+    "comment_text": null,
+    "core-metadata": {
+      "sha256": "ac83aa48c46c92f32347a46c9de023712be48c7280cd1c659dd1d433ab9face1"
+    },
+    "digests": {
+      "blake2b_256": "384ba07b49ab2dcc67d05ce1f549d379880333ec840c6ff7c7d8e95b99aaf08a",
+      "md5": "af06e1aec1f94e7dde14b73c86b184c1",
+      "sha256": "b10d725819a14416945784df460b765468031164e6fab260ee35ba37e5e86e2a"
+    },
+    "downloads": -1,
+    "filename": "ufal_udpipe-1.4.0.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "has_sig": false,
+    "md5_digest": "af06e1aec1f94e7dde14b73c86b184c1",
+    "packagetype": "bdist_wheel",
+    "python_version": "cp314",
+    "requires_python": null,
+    "size": 953498,
+    "upload_time": "2025-11-20T19:33:54",
+    "upload_time_iso_8601": "2025-11-20T19:33:54.053795Z",
+    "url": "https://files.pythonhosted.org/packages/38/4b/a07b49ab2dcc67d05ce1f549d379880333ec840c6ff7c7d8e95b99aaf08a/ufal_udpipe-1.4.0.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "model": {
+    "url": "https://raw.githubusercontent.com/jwijffels/udpipe.models.ud.2.5/master/inst/udpipe-ud-2.5-191206/italian-isdt-ud-2.5-191206.udpipe",
+    "bytes": 19298761,
+    "sha256": "dad54daaa01c250f39ec0ae7d29b3f3830c1eea066db4e3a92c39b41f2dd1a40"
+  },
+  "schema": "wiki22.grammar.runtime.v1",
+  "runtime": "wiki22/data/linguistic/udpipe1",
+  "files": {
+    "italian.udpipe": {
+      "sha256": "dad54daaa01c250f39ec0ae7d29b3f3830c1eea066db4e3a92c39b41f2dd1a40",
+      "bytes": 19298761
+    },
+    "licenses/ATTRIBUTION.txt": {
+      "sha256": "a05e3d93fc92968553da2129d2e5338b65fa331fc80e8810485ecb46fc6f3c64",
+      "bytes": 939
+    },
+    "licenses/LICENSE": {
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "bytes": 16725
+    },
+    "licenses/MODEL-CC-BY-NC-SA-4.0.txt": {
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "bytes": 20850
+    },
+    "licenses/UDPIPE-MPL-2.0.txt": {
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "bytes": 16725
+    },
+    "python/ufal/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "python/ufal/udpipe/__init__.py": {
+      "sha256": "d085ce49e1a7cfa1ba5421f3234deff87aaf1ee682252e683fc65b9b7fbc70a3",
+      "bytes": 500
+    },
+    "python/ufal/udpipe/_udpipe.cpython-314-x86_64-linux-gnu.so": {
+      "sha256": "5758acdf1f61a2341677aefe98d580da11a22771a54a5f8b2d8dfb5ff1c55c87",
+      "bytes": 2909904
+    }
+  },
+  "model_type": "UDPipe1 morphological tagger and small transition dependency parser, not LLM",
+  "llm_calls_required": 0,
+  "non_llm_statistical_parser": true,
+  "license": "MPL-2.0 code; CC-BY-NC-SA-4.0 model; original ISDT CC-BY-NC-SA-3.0",
+  "scope": "Private noncommercial research and use only",
+  "model_upstream": "https://ufal.mff.cuni.cz/udpipe/1/models",
+  "model_license_url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/main/docs/licenses/by-nc-sa/4.0/legalcode.txt"
+}

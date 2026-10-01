@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <parameters>
+    <parameter name="version" required="true" />
+  </parameters>
+  <zip-file>
+    <pe-file path="Wiki22.exe" product-name="Wiki22" product-version="${version}"
+             file-version="${version}" company-name="22 GmbH"
+             original-filename="Wiki22.exe">
+      <authenticode-sign description="Wiki22" description-url="https://www.twenty-two.ch/wiki22.html" />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>

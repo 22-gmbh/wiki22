@@ -1,0 +1,227 @@
+{
+  "schema": "wiki22.maturity.reference.v1",
+  "version": "MATURITY_RUNTIME001",
+  "scope": "Author-written repeatable diagnostics, not independent held-out testing or human calibration",
+  "cases": [
+    {
+      "id": "L1",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Livia è una persona.",
+      "expected": {
+        "SOGGETTO": "livia",
+        "OGGETTO": "persona",
+        "NEGAZIONE": false,
+        "TEMPO": null
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L2",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Livia non è una persona.",
+      "expected": {
+        "SOGGETTO": "livia",
+        "OGGETTO": "persona",
+        "NEGAZIONE": true,
+        "TEMPO": null
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L3",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Alba è la capitale di Liria.",
+      "expected": {
+        "SOGGETTO": "alba",
+        "OGGETTO": "liria",
+        "NEGAZIONE": false,
+        "TEMPO": null
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L4",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Vera è situata in Oria.",
+      "expected": {
+        "SOGGETTO": "vera",
+        "OGGETTO": "oria",
+        "NEGAZIONE": false,
+        "TEMPO": null
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L5",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Nel 1642, Livia era la custode di Oria.",
+      "expected": {
+        "SOGGETTO": "livia",
+        "OGGETTO": "oria",
+        "NEGAZIONE": false,
+        "TEMPO": 1642
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L6",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Nell'anno 1786, Vera non era in Arco.",
+      "expected": {
+        "SOGGETTO": "vera",
+        "OGGETTO": "arco",
+        "NEGAZIONE": true,
+        "TEMPO": 1786
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L7",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Livia è una persona e Vera è una scrittrice.",
+      "expected": {
+        "SOGGETTO": "livia",
+        "OGGETTO": "persona"
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L8",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Vera, che vive a Oria, è una scrittrice.",
+      "expected": {
+        "SOGGETTO": "vera",
+        "OGGETTO": "scrittrice"
+      },
+      "label": "Copertura grammaticale"
+    },
+    {
+      "id": "L9",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Se Livia è una persona, allora Vera è una scrittrice.",
+      "expected": null,
+      "label": "Prudenza: ambiguità e condizioni"
+    },
+    {
+      "id": "L10",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Forse Livia è una persona.",
+      "expected": null,
+      "label": "Prudenza: ambiguità e condizioni"
+    },
+    {
+      "id": "L11",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Nel 1642, Livia era una persona nel 1786.",
+      "expected": null,
+      "label": "Prudenza: ambiguità e condizioni"
+    },
+    {
+      "id": "L12",
+      "area": "language",
+      "kind": "analysis",
+      "text": "Lei è una persona.",
+      "expected": null,
+      "label": "Prudenza: ambiguità e condizioni"
+    },
+    {
+      "id": "R1",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "Qual è la capitale di Liria?",
+      "text": "Alba è la capitale di Liria.",
+      "value": "alba",
+      "status": "VERIFICATA",
+      "expression": "La capitale di Liria è Alba.",
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R2",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "Qual era la capitale di Liria nel 1642?",
+      "text": "Nel 1642, Alba era la capitale di Liria.",
+      "value": "alba",
+      "status": "VERIFICATA",
+      "expression": "La capitale di Liria era Alba nel 1642.",
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R3",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "Qual è la capitale di Liria?",
+      "text": "Alba non è la capitale di Liria.",
+      "value": null,
+      "status": "EVIDENZA_INSUFFICIENTE",
+      "expression": null,
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R4",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "Qual è la capitale di Liria?",
+      "text": "Alba è la capitale di Liria. Alba non è la capitale di Liria.",
+      "value": null,
+      "status": "CONFLITTO",
+      "expression": null,
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R5",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "Qual è la capitale di Liria?",
+      "text": "Alba è la capitale culturale di Liria.",
+      "value": null,
+      "status": "EVIDENZA_INSUFFICIENTE",
+      "expression": null,
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R6",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "In quale paese è nata Livia?",
+      "text": "Oria è una città. Liria è un paese. Livia è nata a Oria. Oria è situata in Liria.",
+      "value": "liria",
+      "status": "VERIFICATA",
+      "expression": "Il paese di nascita documentato di Livia è Liria.",
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R7",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "In quale paese è nata Livia?",
+      "text": "Oria è una città. Liria è un paese. Livia è nata a Oria.",
+      "value": null,
+      "status": "EVIDENZA_INSUFFICIENTE",
+      "expression": null,
+      "label": "Risposta e controllo delle premesse"
+    },
+    {
+      "id": "R8",
+      "area": "reasoning",
+      "kind": "answer",
+      "question": "In quale paese è nata Livia?",
+      "text": "Oria è una città. Liria è un paese. Livia non è nata a Oria. Oria è situata in Liria.",
+      "value": null,
+      "status": "EVIDENZA_INSUFFICIENTE",
+      "expression": null,
+      "label": "Risposta e controllo delle premesse"
+    }
+  ]
+}

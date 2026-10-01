@@ -1,0 +1,16 @@
+{
+  "product": "Wiki22",
+  "version": "1.9.0",
+  "edition": "Wikipedia italiana",
+  "platform": "Windows",
+  "architecture": "x86_64",
+  "articles": 1984914,
+  "model_calls_required": 0,
+  "personal_data_included": false,
+  "windows_real_hardware_tested": false,
+  "windows_compatibility_test": "See accompanying delivery receipt",
+  "validation": "See FREEZE077 acceptance receipt",
+  "integration_checks": "See acceptance receipt",
+  "technical_probes": "6/6",
+  "revision": "FREEZE077"
+}

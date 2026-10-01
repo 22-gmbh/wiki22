@@ -1,0 +1,94 @@
+{
+  "schema": "ai22.grammatica_italiana.bootstrap.v1",
+  "lingua": "ITALIANO",
+  "produzioni": [
+    {
+      "id": "G01",
+      "struttura": "SOGGETTO + COPULA + ARTICOLO_INDEFINITO + NOME",
+      "operazione": "ATTRIBUZIONE_DI_TIPO"
+    },
+    {
+      "id": "G02",
+      "struttura": "SOGGETTO + COPULA + ARTICOLO? + NOME + MODIFICATORI* + PREPOSIZIONE + COMPLEMENTO",
+      "operazione": "RELAZIONE_NOMINALE_DA_APPRENDERE"
+    },
+    {
+      "id": "G03",
+      "struttura": "SOGGETTO + COPULA + PARTICIPIO + PREPOSIZIONE + COMPLEMENTO",
+      "operazione": "RELAZIONE_VERBALE_DA_APPRENDERE"
+    },
+    {
+      "id": "G04",
+      "struttura": "SOGGETTO + VERBO_FINITO + ARTICOLO? + OGGETTO",
+      "operazione": "RELAZIONE_TRANSITIVA_DA_APPRENDERE"
+    },
+    {
+      "id": "G05",
+      "struttura": "TERMINE + significa / è sinonimo di + TERMINE",
+      "operazione": "IPOTESI_DI_EQUIVALENZA_LESSICALE"
+    },
+    {
+      "id": "G06",
+      "struttura": "PRONOME + PREDICATO con antecedente unico",
+      "operazione": "COREFERENZA_LOCALE_LIMITATA"
+    },
+    {
+      "id": "G07",
+      "struttura": "NEGAZIONE preverbale e TEMPO esplicito finale",
+      "operazione": "PRESERVA_POLARITA_E_ANNO"
+    },
+    {
+      "id": "G08",
+      "struttura": "SOGGETTO + COPULA + PREPOSIZIONE + COMPLEMENTO",
+      "operazione": "RELAZIONE_LOCATIVA_DA_APPRENDERE"
+    },
+    {
+      "id": "G09",
+      "struttura": "ANNO_ESPLICITO + VIRGOLA + ASSERZIONE_SEMPLICE",
+      "operazione": "PRESERVA_AMBITO_TEMPORALE_ANTICIPATO"
+    },
+    {
+      "id": "G10",
+      "struttura": "DUE ASSERZIONI COMPLETE con soggetti espliciti + e/ma",
+      "operazione": "PROPOSIZIONI_MULTIPLE_CON_SPAN_COMUNE"
+    },
+    {
+      "id": "G11",
+      "struttura": "NOME_PROPRIO, che RELATIVA, PREDICATO",
+      "operazione": "MATRICE_ASSERTA_CON_RELATIVA_OPACA"
+    },
+    {
+      "id": "G12",
+      "struttura": "EVENTO perché CAUSA; domanda Perché EVENTO?",
+      "operazione": "CAUSA_ESPLICITA_CON_CONTESTO"
+    },
+    {
+      "id": "G13",
+      "struttura": "RELAZIONE binaria dichiarata transitiva + catena locale",
+      "operazione": "CHIUSURA_LIMITATA_CON_PREMESSE_TRACCIABILI"
+    },
+    {
+      "id": "G14",
+      "struttura": "Confronto scalare esplicito fra due referenti nello stesso testo; polarità più/meno e qualità identica"
+    },
+    {
+      "id": "G15",
+      "struttura": "Paziente + ausiliare passivo + participio + da + agente esplicito; stessa forma e tempo della domanda"
+    }
+  ],
+  "soglia_contesti_distinti_lessico": 2,
+  "soglia_coppie_distinte_relazione": 2,
+  "limiti": [
+    "Nessuna grammatica completa",
+    "subordinate e coordinazioni non risolte: astensione",
+    "identità omonime prive di contesto: ambiguità",
+    "nessuna conoscenza dei fatti nel lessico iniziale"
+  ],
+  "morfologia": [
+    "accordo determinante-nome",
+    "presente e imperfetto della copula",
+    "forme irregolari esplicite del seed",
+    "-a/-ano e -isce/-iscono come ipotesi di lemma regolare",
+    "plurale -e/-i come ipotesi, non correzione universale"
+  ]
+}

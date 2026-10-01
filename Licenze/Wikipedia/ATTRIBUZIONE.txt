@@ -1,0 +1,27 @@
+Wikipedia italiana — attribuzione e licenza
+
+Autori: i contributori di Wikipedia in italiano.
+Fonte: https://it.wikipedia.org/ ; dump ufficiale 20260901:
+https://dumps.wikimedia.org/itwiki/20260901/
+
+I testi provengono dalle voci di Wikipedia e sono riutilizzati secondo
+Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale.
+https://creativecommons.org/licenses/by-sa/4.0/
+Il testo completo della licenza è incluso in CC-BY-SA-4.0.txt.
+
+Ogni evidenza conserva il titolo e l'URL della voce originale (curid).
+La cronologia della voce permette di consultare l'elenco dei contributori;
+le schede biografiche conservano anche l'URL della revisione (oldid).
+
+Trasformazioni effettuate da Wiki22: normalizzazione Unicode e spazi,
+conversione del wikitesto con INGEST001, divisione in sezioni ed evidenze,
+compressione e indicizzazione 22CK; estrazione di campi biografici letterali.
+Gli Articoli composti da Wiki22 sono sintesi derivate dalle evidenze locali,
+non il testo integrale né una revisione originale di Wikipedia.
+Le elaborazioni dei testi Wikipedia mantengono la licenza CC BY-SA 4.0.
+
+Il corpus non include le immagini collegate alle voci. Il contenuto riflette
+lo snapshot indicato e può essere incompleto o errato; valgono le esclusioni
+di garanzia e i limiti della licenza. Non è un prodotto ufficiale Wikimedia.
+Questa attribuzione riguarda i contenuti Wikipedia, non modifica le licenze
+del software e dei componenti Python elencate nelle rispettive cartelle.

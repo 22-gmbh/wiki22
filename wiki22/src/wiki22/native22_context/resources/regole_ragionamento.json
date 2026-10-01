@@ -1,0 +1,56 @@
+{
+  "schema": "ai22.regole_esplicite.v1",
+  "regole": [
+    {
+      "REGOLA_ID": "R-PAESE-NASCITA",
+      "SE": [
+        {
+          "predicato": "nascere_a",
+          "argomenti": [
+            "X",
+            "Y"
+          ]
+        },
+        {
+          "predicato": "situare_in",
+          "argomenti": [
+            "Y",
+            "Z"
+          ]
+        }
+      ],
+      "ALLORA": {
+        "predicato": "nascere_nel_paese",
+        "argomenti": [
+          "X",
+          "Z"
+        ]
+      },
+      "condizioni": [
+        "premesse positive",
+        "premesse documentate",
+        "tipo di Y=CITTA",
+        "tipo di Z=PAESE",
+        "tempi espliciti compatibili"
+      ],
+      "nota": "Regola dichiarata, NON appresa automaticamente; nessun fatto inserito."
+    }
+  ],
+  "regole_operative": [
+    {
+      "REGOLA_ID": "R-TRANSITIVITA-DICHIARATA",
+      "SE": [
+        "relazione esplicitamente dichiarata transitiva nella stessa fonte",
+        "catena di massimo quattro collegamenti positivi non contraddetti"
+      ],
+      "ALLORA": "il primo termine è collegato all’ultimo dalla medesima relazione",
+      "CONTROLLI": [
+        "nessuna ambiguità di identità tra fonti",
+        "nessun tempo o qualificatore scartato",
+        "nessuna negazione della conclusione",
+        "rilettura di ogni premessa e della dichiarazione"
+      ],
+      "implementazione": "Motore._advanced_solve; G13"
+    }
+  ]
+}

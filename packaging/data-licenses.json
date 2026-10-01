@@ -1,0 +1,46 @@
+[
+  {
+    "path": "wiki22/src/wiki22/native22_dependency/resources/parser_runtime.json",
+    "declarations": {
+      "license": "MPL-2.0 code; CC-BY-NC-SA-4.0 model; original ISDT CC-BY-NC-SA-3.0",
+      "model_license_url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/main/docs/licenses/by-nc-sa/4.0/legalcode.txt"
+    }
+  },
+  {
+    "path": "wiki22/src/wiki22/native22_dependency_extended/resources/parser_runtime.json",
+    "declarations": {
+      "license": "MPL-2.0 code; CC-BY-NC-SA-4.0 model; original ISDT CC-BY-NC-SA-3.0",
+      "model_license_url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/main/docs/licenses/by-nc-sa/4.0/legalcode.txt"
+    }
+  },
+  {
+    "path": "wiki22/src/wiki22/native22_discourse_scoped/resources/factuality_weights.json",
+    "declarations": {
+      "training_source": "ModaFact fold42 training_set.tsv",
+      "development_source": "ModaFact fold42 dev_set.tsv",
+      "license": "CC-BY-SA-4.0 derived research parameters"
+    }
+  },
+  {
+    "path": "wiki22/src/wiki22/native22_discourse_scoped/resources/parser_runtime.json",
+    "declarations": {
+      "license": "MPL-2.0 code; CC-BY-NC-SA-4.0 model; original ISDT CC-BY-NC-SA-3.0",
+      "model_license_url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/main/docs/licenses/by-nc-sa/4.0/legalcode.txt"
+    }
+  },
+  {
+    "path": "wiki22/src/wiki22/native22_study_interpreter/resources/factuality_weights.json",
+    "declarations": {
+      "training_source": "ModaFact fold42 training_set.tsv",
+      "development_source": "ModaFact fold42 dev_set.tsv",
+      "license": "CC-BY-SA-4.0 derived research parameters"
+    }
+  },
+  {
+    "path": "wiki22/src/wiki22/native22_study_interpreter/resources/parser_runtime.json",
+    "declarations": {
+      "license": "MPL-2.0 code; CC-BY-NC-SA-4.0 model; original ISDT CC-BY-NC-SA-3.0",
+      "model_license_url": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/main/docs/licenses/by-nc-sa/4.0/legalcode.txt"
+    }
+  }
+]

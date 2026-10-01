@@ -1,0 +1,97 @@
+name: Windows launcher and optional SignPath signing
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      sign:
+        description: Request signing after SignPath acceptance and configuration
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  launcher:
+    runs-on: windows-2022
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Compile first-party launcher with Microsoft tools
+        shell: pwsh
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $installation = & $vswhere -latest -products '*' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          if (-not $installation) { throw 'Microsoft C++ Build Tools are missing' }
+          $vcvars = Join-Path $installation 'VC\Auxiliary\Build\vcvars64.bat'
+          cmd /d /s /c "`"`"$vcvars`" && python packaging\build_windows.py`""
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify executable metadata
+        shell: pwsh
+        run: |
+          $file = Get-Item 'dist/windows-unsigned/Wiki22.exe'
+          $v = $file.VersionInfo
+          if ($v.ProductName -ne 'Wiki22' -or $v.CompanyName -ne '22 GmbH' -or $v.ProductVersion -ne '1.9.0' -or $v.OriginalFilename -ne 'Wiki22.exe') {
+            throw 'Unexpected executable metadata'
+          }
+          if ($file.Length -ge 4GB) { throw 'Executable is too large for Authenticode' }
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        id: unsigned
+        with:
+          name: Wiki22-launcher-unsigned
+          path: dist/windows-unsigned/Wiki22.exe
+          if-no-files-found: error
+      - name: Require an explicitly configured production signing profile
+        if: github.event_name == 'workflow_dispatch' && inputs.sign
+        shell: pwsh
+        env:
+          SIGNPATH_ENABLED: ${{ vars.SIGNPATH_ENABLED }}
+          SIGNPATH_ORGANIZATION_ID: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          SIGNPATH_PROJECT_SLUG: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          SIGNPATH_POLICY_SLUG: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          SIGNPATH_API_TOKEN: ${{ secrets.SIGNPATH_API_TOKEN }}
+          BUILD_REF: ${{ github.ref }}
+        run: |
+          if ($env:BUILD_REF -ne 'refs/heads/main') { throw 'Production signing is restricted to main' }
+          foreach ($name in @('SIGNPATH_ORGANIZATION_ID','SIGNPATH_PROJECT_SLUG','SIGNPATH_POLICY_SLUG','SIGNPATH_API_TOKEN')) {
+            if (-not [Environment]::GetEnvironmentVariable($name)) { throw "Missing signing configuration: $name" }
+          }
+          if ($env:SIGNPATH_ENABLED -ne 'true') { throw 'SignPath acceptance/configuration is not complete' }
+      - name: Submit launcher for maintainer-approved signing
+        if: github.event_name == 'workflow_dispatch' && inputs.sign
+        uses: signpath/github-action-submit-signing-request@f6d04783b4569d051e0c80105fe66e82819d0092
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          artifact-configuration-slug: launcher
+          github-artifact-id: ${{ steps.unsigned.outputs.artifact-id }}
+          wait-for-completion: true
+          output-artifact-directory: dist/windows-signed
+          parameters: |
+            version: "1.9.0"
+      - name: Verify returned Authenticode signature and create checksum
+        if: github.event_name == 'workflow_dispatch' && inputs.sign
+        shell: pwsh
+        run: |
+          $file = 'dist/windows-signed/Wiki22.exe'
+          $signature = Get-AuthenticodeSignature $file
+          if ($signature.Status -ne 'Valid') { throw 'Returned signature is not trusted by Windows' }
+          if (-not $signature.TimeStamperCertificate) { throw 'A trusted timestamp is required' }
+          if ($signature.SignerCertificate.Subject -notmatch 'SignPath Foundation') { throw 'Unexpected signing identity' }
+          $hash = (Get-FileHash $file -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  Wiki22.exe" | Set-Content -Encoding ascii dist/windows-signed/SHA256SUMS.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: github.event_name == 'workflow_dispatch' && inputs.sign
+        with:
+          name: Wiki22-launcher-signed
+          path: dist/windows-signed/
+          if-no-files-found: error

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="wiki22-token" content="__WIKI22_TOKEN__">
+<title>Wiki22 — La tua enciclopedia</title>
+<link rel="icon" href="/wiki22.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<a class="w-skip" href="#w-content">Vai al contenuto</a>
+<div id="wiki22-cultura">
+  <header class="w-top"><div class="w-brand"><span class="w-mark">22</span><div><div class="w-word">WIKI22</div><div class="w-small">La tua enciclopedia personale</div></div></div><span class="w-preview">Wiki22 1.9.0 · Un prodotto 22 · Offline</span></header>
+  <div class="w-shell">
+    <aside class="w-sidebar" aria-label="Navigazione e librerie">
+      <nav class="w-nav" aria-label="Sezioni principali">
+        <button data-nav="home" aria-current="page">Enciclopedia</button>
+        <button data-nav="explore">Esplora</button>
+        <button data-nav="timeline">Linea del tempo</button>
+        <button data-nav="places">Paesi e città</button>
+        <button data-nav="shelf">Il mio scaffale</button>
+        <button data-nav="libraries">Librerie</button>
+        <span class="w-nav-label">La tua esperienza</span><button data-nav="settings">Lettura</button><button data-nav="memory">Memoria</button><button data-nav="diagnosis">Diagnosi</button>
+      </nav>
+      <section class="w-libraries" aria-label="Selezione delle librerie">
+        <p class="w-label">Cerca e leggi in</p>
+        <select id="w-mode" aria-label="Ambito delle librerie"><option value="UNIFIED">Tutte le librerie</option><option value="SINGLE">Una libreria</option><option value="CUSTOM">Seleziona librerie</option></select>
+        <div id="w-librarylist" class="w-librarylist"></div>
+        <div class="w-sidefoot"><button data-nav="libraries">＋ Aggiungi libreria</button></div>
+      </section>
+      <div class="w-about-entry"><button data-nav="about"><span class="w-about-entry-mark" aria-hidden="true">22</span><span>Il progetto 22<small>Scopri cosa c’è dietro ↗</small></span></button></div>
+    </aside>
+    <main class="w-main">
+      <div class="w-search" role="search"><input id="w-search" type="search" aria-label="Cerca un argomento" placeholder="Cerca un argomento, un autore, un luogo…" maxlength="180" autocomplete="off"><button id="w-searchbutton" class="w-primary">Cerca</button></div>
+      <div id="w-scope" class="w-scope" aria-live="polite"></div>
+      <div id="w-feedback" role="status" class="w-message"></div>
+      <div id="w-content" tabindex="-1"><div class="w-page"><h1>La tua enciclopedia</h1><p>Sto aprendo le librerie locali…</p></div></div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
