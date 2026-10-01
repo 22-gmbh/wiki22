@@ -50,7 +50,7 @@ class LibraryDownloads:
                              download_bytes=sum(f['compressed'] for f in c['files']),
                              installed_bytes=sum(f['bytes'] for f in c['files']),
                              license=c['license'], articles=c['library']['article_count'],
-                             installed=installed, removed=bool(row and row.get('removed'))))
+                             installed=installed, resumable=(self.base / c['id']).exists(), removed=bool(row and row.get('removed'))))
         return dict(items=rows, transfer=self.status(), free_bytes=shutil.disk_usage(self.base).free)
 
     def start(self, library_id):
