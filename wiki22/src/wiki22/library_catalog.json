@@ -1,0 +1,434 @@
+[
+  {
+    "id": "wikipedia-it-20260901",
+    "name": "Wikipedia italiana",
+    "description": "1.984.914 voci, gi\u00e0 convertite e indicizzate. Dopo il download puoi leggere senza Internet.",
+    "license": "CC BY-SA 4.0 \u00b7 Wikipedia / Wikimedia",
+    "url": "https://22tk2d8d32pigudb.public.blob.vercel-storage.com/wiki22/1.9.0/Installa-Wiki22-Windows.exe",
+    "archive_bytes": 5880183908,
+    "pack": "Wikipedia.22lib.json",
+    "library": {
+      "id": "wikipedia-it-ingest001",
+      "name": "Wikipedia italiana",
+      "enabled": true,
+      "pack_path": "../Biblioteca/Wikipedia/Wikipedia.22lib.json",
+      "pack_sha256": "E1D58884B916A31095E36057DD8D85CF974975CA522EA8C1DEB9D416206E64A4",
+      "pack_bytes": 12815,
+      "article_count": 1984914,
+      "evidence_count": 13936939,
+      "complete": true,
+      "source_name": "Wikimedia 20260901",
+      "provenance": "INGEST001_CANONICAL_ACCEPTED"
+    },
+    "files": [
+      {
+        "path": "Wikipedia.22lib.json",
+        "offset": 24985796,
+        "compressed": 3894,
+        "bytes": 12815,
+        "method": 8,
+        "sha256": "e1d58884b916a31095e36057dd8d85cf974975ca522ea8c1deb9d416206e64a4"
+      },
+      {
+        "path": "geography001/P1-candidate005.json",
+        "offset": 24989809,
+        "compressed": 46199,
+        "bytes": 159522,
+        "method": 8,
+        "sha256": "6bd144c14c794bb3035e029c51d40de70d69b5600dded057125c4d4ea453d83a"
+      },
+      {
+        "path": "geography001/P10-candidate005.json",
+        "offset": 25036128,
+        "compressed": 251,
+        "bytes": 323,
+        "method": 8,
+        "sha256": "461c906f3ca0ef6085f5f2f0629e9bbf3bd0de4e78c492ba0ef268872f4bcd17"
+      },
+      {
+        "path": "geography001/P2-candidate005.json",
+        "offset": 25036498,
+        "compressed": 26771,
+        "bytes": 86313,
+        "method": 8,
+        "sha256": "0700b8e18d7101e80a5c0f496775ce39bc18ee05025a017dea1333e8b2fecef0"
+      },
+      {
+        "path": "geography001/P3-candidate005.json",
+        "offset": 25063388,
+        "compressed": 17152,
+        "bytes": 54697,
+        "method": 8,
+        "sha256": "22918d49c92bf2cbd7485f0c416675eff8b4701e63a4b65b787828ab3299216b"
+      },
+      {
+        "path": "geography001/P4-candidate005.json",
+        "offset": 25080659,
+        "compressed": 20624,
+        "bytes": 67295,
+        "method": 8,
+        "sha256": "24e31f8508affb8a21bdc468faf7df07e49ce5bab4a266f671891aae13875537"
+      },
+      {
+        "path": "geography001/P5-candidate005.json",
+        "offset": 25101402,
+        "compressed": 252,
+        "bytes": 322,
+        "method": 8,
+        "sha256": "684c413c52eb95c027c4c2e979081cca1bda2e2e9594ac6e23cfc0f30ef1d0d8"
+      },
+      {
+        "path": "geography001/P6-candidate005.json",
+        "offset": 25101773,
+        "compressed": 252,
+        "bytes": 322,
+        "method": 8,
+        "sha256": "e1df0fe10b98287c128e29d0da1c67e3a534e349fbb968bae0ab70da69d21c62"
+      },
+      {
+        "path": "geography001/P7-candidate005.json",
+        "offset": 25102144,
+        "compressed": 253,
+        "bytes": 322,
+        "method": 8,
+        "sha256": "b16df929e65b2943ac25b299bfc3f4b17d4a3923e8a0fb5d9d28571739b131fc"
+      },
+      {
+        "path": "geography001/P8-candidate005.json",
+        "offset": 25102516,
+        "compressed": 254,
+        "bytes": 322,
+        "method": 8,
+        "sha256": "bb2ace73c0de6aead71f607558d742a044834ce57abadfb048611883414e456a"
+      },
+      {
+        "path": "geography001/P9-candidate005.json",
+        "offset": 25102889,
+        "compressed": 253,
+        "bytes": 322,
+        "method": 8,
+        "sha256": "1dbc42cb9d0e3bf3b7229a31afbb257b42e573ddb9fd3a576fbca21f8d3e6611"
+      },
+      {
+        "path": "ingest001-v1/P1.22ck",
+        "offset": 25103248,
+        "compressed": 428586691,
+        "bytes": 453478941,
+        "method": 8,
+        "sha256": "d64d163716574a6e9a13719aea50f7299124fe019da13f569b0d269d29e44800"
+      },
+      {
+        "path": "ingest001-v1/P1.bio001-003.sqlite",
+        "offset": 453690058,
+        "compressed": 2220541,
+        "bytes": 2469888,
+        "method": 8,
+        "sha256": "daa36d0fa871aae26de605ac52fc287b086ed90d54f4ad5f5bdaa1392b555de5"
+      },
+      {
+        "path": "ingest001-v1/P10.22ck",
+        "offset": 455910706,
+        "compressed": 222318760,
+        "bytes": 236848838,
+        "method": 8,
+        "sha256": "ef539a5c5ba009ca0b313ceddadc20f1b3050e88a5bc67fb6a5fb5b13e91f454"
+      },
+      {
+        "path": "ingest001-v1/P10.bio001.sqlite",
+        "offset": 678229582,
+        "compressed": 3911910,
+        "bytes": 4341760,
+        "method": 8,
+        "sha256": "9182ed449402aeede888b0bd9fb15eed267481360c1a41381bcb5739a4788f35"
+      },
+      {
+        "path": "ingest001-v1/P2.22ck",
+        "offset": 682141598,
+        "compressed": 523359809,
+        "bytes": 554600266,
+        "method": 8,
+        "sha256": "0f6b35e51929970bb5578e9d372deef0f13ca64aa6136f8ae9da8f20e25e0a9d"
+      },
+      {
+        "path": "ingest001-v1/P2.bio001.sqlite",
+        "offset": 1205501522,
+        "compressed": 5439246,
+        "bytes": 6025216,
+        "method": 8,
+        "sha256": "b3f0b0a75925d1385a600a4e5d7799d133e1318e011bd57ba9dd113e1da56b40"
+      },
+      {
+        "path": "ingest001-v1/P3.22ck",
+        "offset": 1210940874,
+        "compressed": 577179471,
+        "bytes": 615709846,
+        "method": 8,
+        "sha256": "40079e27a52362ffa52247e87f822e58e5e3749d779f4b6dff14b02eb1083685"
+      },
+      {
+        "path": "ingest001-v1/P3.bio001.sqlite",
+        "offset": 1788120460,
+        "compressed": 8567395,
+        "bytes": 9469952,
+        "method": 8,
+        "sha256": "7f4ed5f76a33d8834af8ca1d47df3be32556e8c780dfe4ac0ccbfbcc33fa4f64"
+      },
+      {
+        "path": "ingest001-v1/P4.22ck",
+        "offset": 1796687961,
+        "compressed": 646686593,
+        "bytes": 693290062,
+        "method": 8,
+        "sha256": "31ad6575ab27c1ee7dd211308f5b4809140ff0297e421d9c5729d8f0076e3352"
+      },
+      {
+        "path": "ingest001-v1/P4.bio001-002.sqlite",
+        "offset": 2443374673,
+        "compressed": 12535640,
+        "bytes": 13914112,
+        "method": 8,
+        "sha256": "bedd7daf2909fcb41ee4951895df43cda5069b40411767d4ee97677f3603f239"
+      },
+      {
+        "path": "ingest001-v1/P5.22ck",
+        "offset": 2455910419,
+        "compressed": 644224632,
+        "bytes": 694154484,
+        "method": 8,
+        "sha256": "02a7d2e6d957ff3742230b8c1911c598e3da471b05d1b1a454661b8862b374d1"
+      },
+      {
+        "path": "ingest001-v1/P5.bio001.sqlite",
+        "offset": 3100135166,
+        "compressed": 14035994,
+        "bytes": 15564800,
+        "method": 8,
+        "sha256": "da05bbf320777599b6c8964d87a935c3059029d56444c629d397acb9aac735fc"
+      },
+      {
+        "path": "ingest001-v1/P6.22ck",
+        "offset": 3114171266,
+        "compressed": 277221157,
+        "bytes": 298673217,
+        "method": 8,
+        "sha256": "3b65bb2a554600f8cd404a0ab9f906e7624673f11eb589b8ecf50c8e3a8ebef5"
+      },
+      {
+        "path": "ingest001-v1/P6.bio001.sqlite",
+        "offset": 3391392538,
+        "compressed": 5645224,
+        "bytes": 6262784,
+        "method": 8,
+        "sha256": "69b5598598f71babdb4c417ff4034f01a4f05ee3d305e46f74ef37abe01a4e98"
+      },
+      {
+        "path": "ingest001-v1/P7.22ck",
+        "offset": 3397037868,
+        "compressed": 349325278,
+        "bytes": 377226729,
+        "method": 8,
+        "sha256": "91acba805f7c35eb6bfc106c49eb163af6ff3f2cfd838ee33817350c118c3fda"
+      },
+      {
+        "path": "ingest001-v1/P7.bio001.sqlite",
+        "offset": 3746363261,
+        "compressed": 7670885,
+        "bytes": 8531968,
+        "method": 8,
+        "sha256": "1636d604e364dd613d63fd7d774512e885abb0d1df4a1b6809de188a85355033"
+      },
+      {
+        "path": "ingest001-v1/P8.22ck",
+        "offset": 3754034252,
+        "compressed": 520545126,
+        "bytes": 560089876,
+        "method": 8,
+        "sha256": "d0cf22b6031c8ba523c19a81a380946306d7f7f3b77ccf23cf7667f48086d789"
+      },
+      {
+        "path": "ingest001-v1/P8.bio001.sqlite",
+        "offset": 4274579493,
+        "compressed": 12589432,
+        "bytes": 13934592,
+        "method": 8,
+        "sha256": "02467498bd63db98bebf9770b4ddab2687c0ebdfe0fdd25e9f28bcb55354d74e"
+      },
+      {
+        "path": "ingest001-v1/P9.22ck",
+        "offset": 4287169031,
+        "compressed": 598721898,
+        "bytes": 638476288,
+        "method": 8,
+        "sha256": "ad886d2b60f7b96b9649858ce55fec90763c6a380790dcab61a01e8495c43d01"
+      },
+      {
+        "path": "ingest001-v1/P9.bio001.sqlite",
+        "offset": 4885891044,
+        "compressed": 11505571,
+        "bytes": 12726272,
+        "method": 8,
+        "sha256": "02ef7d8ae8aff8d2c8efee172dd3d27d2d240cb91308c2429c68b05ac4697296"
+      },
+      {
+        "path": "reading001/P1-candidate004.merkle",
+        "offset": 4897396734,
+        "compressed": 6986037,
+        "bytes": 8388632,
+        "method": 8,
+        "sha256": "8c49aabddd47471f41634c38a3fbd0824a4bd6dca63b427536e2d6f298d9e779"
+      },
+      {
+        "path": "reading001/P1-candidate004.sqlite",
+        "offset": 4904382890,
+        "compressed": 62574441,
+        "bytes": 71258112,
+        "method": 8,
+        "sha256": "09278d07767d9d6c42c7f158048020d01da4ab2cd8959f83614146f6ffab7958"
+      },
+      {
+        "path": "reading001/P10-candidate005-restart001.merkle",
+        "offset": 4966957462,
+        "compressed": 4082229,
+        "bytes": 4194328,
+        "method": 8,
+        "sha256": "a2b12373fb3fd2ead08cfe79787914c7d717ced4d93fb6422383644145ab911f"
+      },
+      {
+        "path": "reading001/P10-candidate005-restart001.sqlite",
+        "offset": 4971039822,
+        "compressed": 38557203,
+        "bytes": 43204608,
+        "method": 8,
+        "sha256": "bb8a5ce0fe033bf470186aed134f28dfdcd5ec33f2a112653e5aa51d4aa26703"
+      },
+      {
+        "path": "reading001/P2-candidate006.merkle",
+        "offset": 5009597144,
+        "compressed": 9074208,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "ee146f085afa085c57a2c59afadc804c8c39f98c25e92c7db3c1eaa0ebe66485"
+      },
+      {
+        "path": "reading001/P2-candidate006.sqlite",
+        "offset": 5018671471,
+        "compressed": 94166438,
+        "bytes": 106393600,
+        "method": 8,
+        "sha256": "9f9632973cda25784468c92c9fad0465523a7fb83f6f0b7f8a982a1985f11017"
+      },
+      {
+        "path": "reading001/P3-candidate004.merkle",
+        "offset": 5112838028,
+        "compressed": 11976435,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "a914573330d75a5e6a9ec3643ecdbf4b176519d801980d8efaed6fb00652046a"
+      },
+      {
+        "path": "reading001/P3-candidate004.sqlite",
+        "offset": 5124814582,
+        "compressed": 110167913,
+        "bytes": 123060224,
+        "method": 8,
+        "sha256": "bb90ce658651ce5b8387dfe0d74f0ca05fa0266fd9476026120f69905754437a"
+      },
+      {
+        "path": "reading001/P4-candidate005-restart001.merkle",
+        "offset": 5234982625,
+        "compressed": 14819531,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "e086c2e204c7e08d29ef82a1ce3605e94ad1a3c30933f831bc9eac65d77e9b91"
+      },
+      {
+        "path": "reading001/P4-candidate005-restart001.sqlite",
+        "offset": 5249802286,
+        "compressed": 127344403,
+        "bytes": 142168064,
+        "method": 8,
+        "sha256": "c2d3cdc380da953a4051d92043217d799e726cc80ec91066f330c065e73a8a22"
+      },
+      {
+        "path": "reading001/P5-candidate004.merkle",
+        "offset": 5377146808,
+        "compressed": 15520485,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "b6c728eb8f8f677ce3f231e325acb4359d89536bc973c6a3eb699994ff9b6b65"
+      },
+      {
+        "path": "reading001/P5-candidate004.sqlite",
+        "offset": 5392667412,
+        "compressed": 125269956,
+        "bytes": 139378688,
+        "method": 8,
+        "sha256": "8286e10a1a509cec308ad605d32c73c2d36084f30bb7e04546f6869e28c037b9"
+      },
+      {
+        "path": "reading001/P6-candidate004.merkle",
+        "offset": 5517937487,
+        "compressed": 6434952,
+        "bytes": 8388632,
+        "method": 8,
+        "sha256": "4f877efb07854f696ec1f21c35c76d9ce0dcd5ae9d3df585508a73771b92eb5c"
+      },
+      {
+        "path": "reading001/P6-candidate004.sqlite",
+        "offset": 5524372558,
+        "compressed": 51002566,
+        "bytes": 56737792,
+        "method": 8,
+        "sha256": "2ffdc45b12d0b593036b403ab1d8c0520b2a1307aebe3be29462260a635992f7"
+      },
+      {
+        "path": "reading001/P7-candidate004.merkle",
+        "offset": 5575375243,
+        "compressed": 8176400,
+        "bytes": 8388632,
+        "method": 8,
+        "sha256": "e2695e784e98052b05f5d7a8e9b02e1b42785157d4afdeeb5a916184cf287055"
+      },
+      {
+        "path": "reading001/P7-candidate004.sqlite",
+        "offset": 5583551762,
+        "compressed": 64182446,
+        "bytes": 71585792,
+        "method": 8,
+        "sha256": "9bf19953bdadf30aea180f96c88c86122599942814e6fb93d7cd4dd57f73ba89"
+      },
+      {
+        "path": "reading001/P8-candidate004.merkle",
+        "offset": 5647734327,
+        "compressed": 11079865,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "843f9963c3504e9467ce5bb32a6782a707c5b1029f4199ddc2a7403fbee78b96"
+      },
+      {
+        "path": "reading001/P8-candidate004.sqlite",
+        "offset": 5658814311,
+        "compressed": 95895279,
+        "bytes": 107401216,
+        "method": 8,
+        "sha256": "5726131a61784b80ba55ea9fc0983dd8cc77cffb9dd53899d8c06c13967f6b83"
+      },
+      {
+        "path": "reading001/P9-candidate005-restart001.merkle",
+        "offset": 5754709720,
+        "compressed": 10922651,
+        "bytes": 16777240,
+        "method": 8,
+        "sha256": "d12de08c267e5bde98e968d93349d414fbf4770a2fc81812b98fd162ff66642a"
+      },
+      {
+        "path": "reading001/P9-candidate005-restart001.sqlite",
+        "offset": 5765632501,
+        "compressed": 99395496,
+        "bytes": 111292416,
+        "method": 8,
+        "sha256": "609e29348b403de86602584cc9da5b33f0f0970b93f04a846ef6e544117d0899"
+      }
+    ]
+  }
+]

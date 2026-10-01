@@ -240,12 +240,13 @@ class ImportedProvider(CompactKnowledgeProvider):
         return dict(title=a.title,article_id=aid,paragraphs=out,links=[],complete_article=True,source=a.source,
             revision_id=data['file_sha256'],interpretation='EXTRACTED_DOCUMENT_TEXT_NOT_ORIGINAL_LAYOUT')
 
-def import_documents(registry,source,name):
+def import_documents(registry,source,name,*,selected_files=None,source_refs=None):
     source=Path(source).expanduser().resolve(strict=True);lid=slug(name)
     target=registry.base/lid
     if registry.get(lid) or target.exists():raise ValueError('Esiste già una libreria con questo nome')
     files=[]
-    if source.is_file():files=[source]
+    if selected_files is not None:files=list(selected_files)
+    elif source.is_file():files=[source]
     elif source.is_dir():
         if registry.root.is_relative_to(source):raise ValueError('Scegli una cartella di documenti, non la cartella che contiene Wiki22')
         for base,dirs,names in os.walk(source,followlinks=False):
@@ -255,7 +256,7 @@ def import_documents(registry,source,name):
     else:raise ValueError('Scegli un file regolare o una cartella')
     report=[];articles=[];documents=[];total=0
     for path in files:
-        item=dict(file=str(path.relative_to(source)) if source.is_dir() else path.name,status='REJECTED')
+        item=dict(file=(source_refs or {}).get(str(path),str(path)) if selected_files is not None else str(path.relative_to(source)) if source.is_dir() else path.name,status='REJECTED')
         report.append(item)
         try:
             if path.is_symlink() or not path.is_file():raise ValueError('Collegamento simbolico o file speciale non importato')
@@ -274,7 +275,7 @@ def import_documents(registry,source,name):
                 if not sections:raise ValueError('Documento privo di testo leggibile')
                 if len(sections)>10000:raise ValueError('Documento troppo lungo: suddividilo in volumi')
                 aid='DOC-'+hashlib.sha256((item['file']+'\0'+str(len(added))).encode()).hexdigest()[:24].upper()
-                added.append(dict(article_id=aid,title=_normalize(title)[:300],source_ref=path.as_uri()+'#sha256='+before,sections=sections))
+                added.append(dict(article_id=aid,title=_normalize(title)[:300],source_ref=(source_refs or {}).get(str(path),path.as_uri())+'#sha256='+before,sections=sections))
                 records.append((aid,dict(file_sha256=before,sections=sections)))
             if len(articles)+len(added)>20000:raise ValueError('Troppe voci: importa raccolte più piccole')
             articles.extend(added);documents.extend(records);total+=size

@@ -14,7 +14,7 @@ from .knowledge.atlas import browse_titles
 from .extended_reading import open_extended
 from .research_document import sentence_spans
 
-VERSION = 'MANAGE076'
+VERSION = 'LIBRARIES110_PREVIEW1'
 
 
 def documentary_sentences(text):
@@ -65,6 +65,7 @@ class EncyclopediaService:
     def __init__(self, root, *, state_dir=None):
         self.root = Path(root).resolve()
         self.registry = LibraryRegistry(self.root)
+        self.registry.ensure()
         self.lock = threading.RLock()
         self.import_lock = threading.Lock()
         self.providers = {}
@@ -444,7 +445,8 @@ class EncyclopediaService:
             raise ValueError('Scegli un file o una cartella e assegna un nome alla libreria.')
         with self.import_lock:
             from .document_import import import_documents
-            return import_documents(self.registry,path,name.strip())
+            with self.lock:
+                return import_documents(self.registry,path,name.strip())
 
     def export(self, **kwargs):
         return self.export_document(self.article(**kwargs))

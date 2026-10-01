@@ -1,0 +1,27 @@
+name: Lightweight app and source acquisition tests
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    strategy:
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.14'
+      - name: Verify source acquisition and existing library behavior
+        env:
+          PYTHONPATH: wiki22/src
+          PYTHONUTF8: "1"
+        run: python -m unittest discover -s tests -v
+      - name: Check interface JavaScript
+        run: node --check wiki22/src/wiki22/encyclopedia_web/app.js

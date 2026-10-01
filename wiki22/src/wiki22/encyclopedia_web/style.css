@@ -259,3 +259,10 @@ body[data-palette="sand"]{background:#eee3d1}body[data-palette="mist"]{backgroun
 #wiki22-cultura .w-place-row strong{display:block;font:21px Georgia,serif;overflow-wrap:anywhere}
 #wiki22-cultura .w-place-row small{display:block;color:var(--w-muted)}
 #wiki22-cultura .w-calendar-help{margin-top:20px}#wiki22-cultura .w-calendar-help h3{margin-top:26px}
+
+/* Library acquisition: explicit choices, readable progress and source previews. */
+.w-import textarea{display:block;width:100%;box-sizing:border-box;font:inherit;padding:12px;margin:8px 0 16px;border:1px solid #a7b3a8;border-radius:8px;background:#fffdf7;color:#243a2c;resize:vertical}
+.w-import progress{width:100%;height:20px;accent-color:#315b42}
+.w-probe-list{max-height:420px;overflow:auto;border-block:1px solid #c5c9bd;margin:20px 0}
+.w-probe-source{display:flex!important;gap:14px;padding:14px 0;border-bottom:1px solid #dedfd7;align-items:flex-start}
+.w-probe-source input{width:auto!important;margin-top:5px}.w-probe-source span{min-width:0}.w-probe-source small{display:block;overflow-wrap:anywhere;line-height:1.5;margin-top:5px}.w-probe-source strong{overflow-wrap:anywhere}
