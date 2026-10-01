@@ -1,5 +1,6 @@
 """Import fidelity, bounded learning and source-scope tests on disposable data."""
 import os
+import importlib.util
 import hashlib
 import json
 from pathlib import Path
@@ -138,6 +139,6 @@ class Import56Tests(unittest.TestCase):
         r=self.s.import_library(str(p),'Titoli');rows=self.s.search('Arte',mode='SINGLE',ids=[r['id']])['rows']
         self.assertEqual(rows[0]['title'],'Arte italiana');self.assertTrue(self.doc(r['id'])['notes'])
     def test_formats_report_actual_converter_presence(self):
-        f=formats();self.assertIn('.epub',f['native']);self.assertEqual(next(x for x in f['optional'] if x['extension']=='.pdf')['available'],bool(shutil.which('pdftotext')))
+        f=formats();self.assertIn('.epub',f['native']);self.assertEqual(next(x for x in f['optional'] if x['extension']=='.pdf')['available'],bool(shutil.which('pdftotext')) or importlib.util.find_spec('pypdf') is not None)
 
 if __name__=='__main__':unittest.main()
