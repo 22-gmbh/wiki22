@@ -28,6 +28,7 @@ from .knowledge.compact22.format import _tokens, _normalize
 from .knowledge.compact_provider import CompactKnowledgeProvider
 from .knowledge.corpus_import import chunks
 from .knowledge.library_registry import slug
+from .html_document import html_sections
 
 MAX_FILE=128*1024*1024
 MAX_TEXT=16*1024*1024
@@ -155,7 +156,7 @@ def extract(path):
             if not sections:raise ValueError('PDF senza testo estraibile: serve OCR prima dell’importazione')
             return [(title,sections)]
     raw=decode(path.read_bytes())
-    if ext in ('.html','.htm','.xhtml'):sections=[('Documento',html_text(raw))]
+    if ext in ('.html','.htm','.xhtml'):sections=html_sections(raw)
     elif ext=='.fb2':sections=[('Libro',paragraphs(xml(path.read_bytes())))]
     elif ext in ('.csv','.tsv'):
         rows=list(csv.reader(io.StringIO(raw),delimiter='\t' if ext=='.tsv' else ','))
@@ -235,7 +236,12 @@ class ImportedProvider(CompactKnowledgeProvider):
                 live=self.get_evidence(e['id'])
                 if ' '.join(_tokens(live.text))!=e['text'] or live.article_id!=aid:raise ValueError('Evidenza documentale modificata')
                 spans.append(dict(evidence_id=live.evidence_id,start=0,end=len(live.text)))
-            out.append(dict(text=text,heading=original['title'],source=a.source,source_revision=data['file_sha256'],spans=spans))
+            # Restore paragraph boundaries only after validating the complete
+            # stored section against 22CK. Notes retain its full source context.
+            for paragraph in re.split(r'\n\s*\n', text):
+                if paragraph.strip():
+                    out.append(dict(text=paragraph.strip(),heading=original['title'],source=a.source,
+                        source_context=text,source_revision=data['file_sha256'],spans=spans))
         self._ensure_unchanged()
         return dict(title=a.title,article_id=aid,paragraphs=out,links=[],complete_article=True,source=a.source,
             revision_id=data['file_sha256'],interpretation='EXTRACTED_DOCUMENT_TEXT_NOT_ORIGINAL_LAYOUT')

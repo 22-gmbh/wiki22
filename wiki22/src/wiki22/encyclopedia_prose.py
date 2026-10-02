@@ -31,7 +31,7 @@ def canonical_issue(text,heading):
     if re.match(r'^[,;:\].]|^(?:nd|px|upright|thumb)\b',text,re.I):return 'frammento incompleto'
     return None
 
-def prepare_pages(pages,notes,budget=3600):
+def prepare_pages(pages,notes,budget=3600,*,preserve_order=False):
     # Original reading paragraphs take priority over equivalent normalized extracts.
     known={token_key(n['excerpt']) for n in notes if not n.get('canonical_excerpt')}
     groups={};omitted=[];formatted=0
@@ -54,10 +54,12 @@ def prepare_pages(pages,notes,budget=3600):
                     sentences.append(dict(s,text=text))
             if not sentences:continue
             heading=re.sub(r'\s*\(parte \d+\)$','',block['heading']) if any(notes[s['note']-1].get('canonical_excerpt') for s in block['sentences']) else block['heading']
-            groups.setdefault(heading,[]).append(dict(heading=heading,sentences=sentences))
+            key=(len(groups),heading) if preserve_order else heading
+            groups.setdefault(key,[]).append(dict(heading=heading,sentences=sentences))
     output=[[]];toc=[];used=0
-    for heading,blocks in groups.items():
+    for blocks in groups.values():
         for block in blocks:
+            heading=block['heading']
             length=sum(len(s['text']) for s in block['sentences'])
             if output[-1] and used+length>budget:output.append([]);used=0
             if not any(t['heading']==heading for t in toc):toc.append(dict(heading=heading,page=len(output)-1))
