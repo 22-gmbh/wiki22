@@ -279,7 +279,7 @@ class EncyclopediaService:
                         source_hash=identity,canonical_excerpt=bool(p.get('canonical_excerpt'))))
                 pages[-1].append(dict(heading=heading,sentences=items));used+=len(p['text'])
             from .encyclopedia_prose import prepare_pages
-            pages,toc,presentation=prepare_pages(pages,notes,preserve_order=imported_document)
+            pages,toc,presentation=prepare_pages(pages,notes,budget=2400 if imported_document else 3600,preserve_order=imported_document)
             with self.db() as db:
                 row=db.execute('SELECT page FROM shelf WHERE library=? AND article=?',(library_id,article_id)).fetchone()
             return dict(title=book['title'],article_id=article_id,library_id=library_id,

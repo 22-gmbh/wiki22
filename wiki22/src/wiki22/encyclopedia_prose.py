@@ -61,6 +61,9 @@ def prepare_pages(pages,notes,budget=3600,*,preserve_order=False):
         for block in blocks:
             heading=block['heading']
             length=sum(len(s['text']) for s in block['sentences'])
+            if preserve_order:
+                # Short web paragraphs and headings need space as well as text.
+                length+=110+(80 if not output[-1] or output[-1][-1]['heading']!=heading else 0)
             if output[-1] and used+length>budget:output.append([]);used=0
             if not any(t['heading']==heading for t in toc):toc.append(dict(heading=heading,page=len(output)-1))
             output[-1].append(block);used+=length

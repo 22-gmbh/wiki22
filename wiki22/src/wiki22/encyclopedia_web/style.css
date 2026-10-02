@@ -275,7 +275,7 @@ body[data-palette="sand"]{background:#eee3d1}body[data-palette="mist"]{backgroun
 #wiki22-cultura .w-reading-page .w-copy{margin:32px auto 40px;column-gap:clamp(28px,4vw,56px);column-rule:1px solid var(--w-line);column-fill:balance;overflow-wrap:anywhere}
 #wiki22-cultura .w-reading-page .w-copy[data-columns="1"]{max-width:72ch}
 #wiki22-cultura .w-reading-page .w-copy[data-columns="2"]{columns:2 30ch;max-width:116ch}
-#wiki22-cultura .w-reading-page .w-copy section{break-inside:auto;margin:0 0 1.35em}
+#wiki22-cultura .w-reading-page .w-copy section{break-inside:auto;margin:0 0 1em}
 #wiki22-cultura .w-reading-page .w-copy h3{font-size:1.35em;line-height:1.25;letter-spacing:-.015em;margin:1.4em 0 .7em;color:var(--w-accent);break-after:avoid}
 #wiki22-cultura .w-reading-page .w-copy section:first-child h3{margin-top:0}
 #wiki22-cultura .w-reading-page .w-copy p{margin:0 0 1.1em;orphans:3;widows:3}
@@ -283,3 +283,5 @@ body[data-palette="sand"]{background:#eee3d1}body[data-palette="mist"]{backgroun
 #wiki22-cultura .w-reading-page .w-bottom{margin-top:32px;padding-top:20px}
 @media(max-width:760px){#wiki22-cultura .w-reading-page{padding:26px 22px}#wiki22-cultura .w-reading-page .w-copy{columns:1!important;max-width:72ch;margin-block:26px}}
 @media(max-width:560px){#wiki22-cultura .w-reading-page{padding:24px 18px}#wiki22-cultura .w-reading-page .w-source{padding:16px}}
+
+#wiki22-cultura .w-reading-page .w-short-paragraph{break-inside:avoid-column}
