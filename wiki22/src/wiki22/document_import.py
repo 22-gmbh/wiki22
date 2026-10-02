@@ -28,6 +28,7 @@ from .knowledge.compact22.format import _tokens, _normalize
 from .knowledge.compact_provider import CompactKnowledgeProvider
 from .knowledge.corpus_import import chunks
 from .knowledge.library_registry import slug
+from .html_document import html_sections
 
 MAX_FILE=128*1024*1024
 MAX_TEXT=16*1024*1024
@@ -155,7 +156,7 @@ def extract(path):
             if not sections:raise ValueError('PDF senza testo estraibile: serve OCR prima dell’importazione')
             return [(title,sections)]
     raw=decode(path.read_bytes())
-    if ext in ('.html','.htm','.xhtml'):sections=[('Documento',html_text(raw))]
+    if ext in ('.html','.htm','.xhtml'):sections=html_sections(raw)
     elif ext=='.fb2':sections=[('Libro',paragraphs(xml(path.read_bytes())))]
     elif ext in ('.csv','.tsv'):
         rows=list(csv.reader(io.StringIO(raw),delimiter='\t' if ext=='.tsv' else ','))
@@ -235,17 +236,23 @@ class ImportedProvider(CompactKnowledgeProvider):
                 live=self.get_evidence(e['id'])
                 if ' '.join(_tokens(live.text))!=e['text'] or live.article_id!=aid:raise ValueError('Evidenza documentale modificata')
                 spans.append(dict(evidence_id=live.evidence_id,start=0,end=len(live.text)))
-            out.append(dict(text=text,heading=original['title'],source=a.source,source_revision=data['file_sha256'],spans=spans))
+            # Restore paragraph boundaries only after validating the complete
+            # stored section against 22CK. Notes retain its full source context.
+            for paragraph in re.split(r'\n\s*\n', text):
+                if paragraph.strip():
+                    out.append(dict(text=paragraph.strip(),heading=original['title'],source=a.source,
+                        source_context=text,source_revision=data['file_sha256'],spans=spans))
         self._ensure_unchanged()
         return dict(title=a.title,article_id=aid,paragraphs=out,links=[],complete_article=True,source=a.source,
             revision_id=data['file_sha256'],interpretation='EXTRACTED_DOCUMENT_TEXT_NOT_ORIGINAL_LAYOUT')
 
-def import_documents(registry,source,name):
+def import_documents(registry,source,name,*,selected_files=None,source_refs=None):
     source=Path(source).expanduser().resolve(strict=True);lid=slug(name)
     target=registry.base/lid
     if registry.get(lid) or target.exists():raise ValueError('Esiste già una libreria con questo nome')
     files=[]
-    if source.is_file():files=[source]
+    if selected_files is not None:files=list(selected_files)
+    elif source.is_file():files=[source]
     elif source.is_dir():
         if registry.root.is_relative_to(source):raise ValueError('Scegli una cartella di documenti, non la cartella che contiene Wiki22')
         for base,dirs,names in os.walk(source,followlinks=False):
@@ -255,7 +262,7 @@ def import_documents(registry,source,name):
     else:raise ValueError('Scegli un file regolare o una cartella')
     report=[];articles=[];documents=[];total=0
     for path in files:
-        item=dict(file=str(path.relative_to(source)) if source.is_dir() else path.name,status='REJECTED')
+        item=dict(file=(source_refs or {}).get(str(path),str(path)) if selected_files is not None else str(path.relative_to(source)) if source.is_dir() else path.name,status='REJECTED')
         report.append(item)
         try:
             if path.is_symlink() or not path.is_file():raise ValueError('Collegamento simbolico o file speciale non importato')
@@ -274,7 +281,7 @@ def import_documents(registry,source,name):
                 if not sections:raise ValueError('Documento privo di testo leggibile')
                 if len(sections)>10000:raise ValueError('Documento troppo lungo: suddividilo in volumi')
                 aid='DOC-'+hashlib.sha256((item['file']+'\0'+str(len(added))).encode()).hexdigest()[:24].upper()
-                added.append(dict(article_id=aid,title=_normalize(title)[:300],source_ref=path.as_uri()+'#sha256='+before,sections=sections))
+                added.append(dict(article_id=aid,title=_normalize(title)[:300],source_ref=(source_refs or {}).get(str(path),path.as_uri())+'#sha256='+before,sections=sections))
                 records.append((aid,dict(file_sha256=before,sections=sections)))
             if len(articles)+len(added)>20000:raise ValueError('Troppe voci: importa raccolte più piccole')
             articles.extend(added);documents.extend(records);total+=size

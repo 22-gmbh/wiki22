@@ -259,3 +259,29 @@ body[data-palette="sand"]{background:#eee3d1}body[data-palette="mist"]{backgroun
 #wiki22-cultura .w-place-row strong{display:block;font:21px Georgia,serif;overflow-wrap:anywhere}
 #wiki22-cultura .w-place-row small{display:block;color:var(--w-muted)}
 #wiki22-cultura .w-calendar-help{margin-top:20px}#wiki22-cultura .w-calendar-help h3{margin-top:26px}
+
+/* Library acquisition: explicit choices, readable progress and source previews. */
+.w-import textarea{display:block;width:100%;box-sizing:border-box;font:inherit;padding:12px;margin:8px 0 16px;border:1px solid #a7b3a8;border-radius:8px;background:#fffdf7;color:#243a2c;resize:vertical}
+.w-import progress{width:100%;height:20px;accent-color:#315b42}
+.w-probe-list{max-height:420px;overflow:auto;border-block:1px solid #c5c9bd;margin:20px 0}
+.w-probe-source{display:flex!important;gap:14px;padding:14px 0;border-bottom:1px solid #dedfd7;align-items:flex-start}
+.w-probe-source input{width:auto!important;margin-top:5px}.w-probe-source span{min-width:0}.w-probe-source small{display:block;overflow-wrap:anywhere;line-height:1.5;margin-top:5px}.w-probe-source strong{overflow-wrap:anywhere}
+
+/* Reading spreads: balance long sections and keep a centered reading measure. */
+#wiki22-cultura .w-reading-page{max-width:1120px;margin-inline:auto;padding:clamp(24px,4vw,54px)}
+#wiki22-cultura .w-reading-page>h1{max-width:24ch;font-size:clamp(30px,3.4vw,46px);line-height:1.12;margin-bottom:18px;text-wrap:balance}
+#wiki22-cultura .w-reading-page>.w-breadcrumb{margin-bottom:18px;line-height:1.6}
+#wiki22-cultura .w-reading-page>.w-small{line-height:1.6}
+#wiki22-cultura .w-reading-page .w-copy{margin:32px auto 40px;column-gap:clamp(28px,4vw,56px);column-rule:1px solid var(--w-line);column-fill:balance;overflow-wrap:anywhere}
+#wiki22-cultura .w-reading-page .w-copy[data-columns="1"]{max-width:72ch}
+#wiki22-cultura .w-reading-page .w-copy[data-columns="2"]{columns:2 30ch;max-width:116ch}
+#wiki22-cultura .w-reading-page .w-copy section{break-inside:auto;margin:0 0 1em}
+#wiki22-cultura .w-reading-page .w-copy h3{font-size:1.35em;line-height:1.25;letter-spacing:-.015em;margin:1.4em 0 .7em;color:var(--w-accent);break-after:avoid}
+#wiki22-cultura .w-reading-page .w-copy section:first-child h3{margin-top:0}
+#wiki22-cultura .w-reading-page .w-copy p{margin:0 0 1.1em;orphans:3;widows:3}
+#wiki22-cultura .w-reading-page .w-source{max-width:80ch;margin:28px auto;padding:24px;overflow-wrap:anywhere}
+#wiki22-cultura .w-reading-page .w-bottom{margin-top:32px;padding-top:20px}
+@media(max-width:760px){#wiki22-cultura .w-reading-page{padding:26px 22px}#wiki22-cultura .w-reading-page .w-copy{columns:1!important;max-width:72ch;margin-block:26px}}
+@media(max-width:560px){#wiki22-cultura .w-reading-page{padding:24px 18px}#wiki22-cultura .w-reading-page .w-source{padding:16px}}
+
+#wiki22-cultura .w-reading-page .w-short-paragraph{break-inside:avoid-column}

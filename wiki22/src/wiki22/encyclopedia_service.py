@@ -14,7 +14,7 @@ from .knowledge.atlas import browse_titles
 from .extended_reading import open_extended
 from .research_document import sentence_spans
 
-VERSION = 'MANAGE076'
+VERSION = 'LIBRARIES110_PREVIEW1'
 
 
 def documentary_sentences(text):
@@ -65,6 +65,7 @@ class EncyclopediaService:
     def __init__(self, root, *, state_dir=None):
         self.root = Path(root).resolve()
         self.registry = LibraryRegistry(self.root)
+        self.registry.ensure()
         self.lock = threading.RLock()
         self.import_lock = threading.Lock()
         self.providers = {}
@@ -256,10 +257,12 @@ class EncyclopediaService:
                 raise ValueError('La fonte è cambiata: riapri la voce prima di salvare o esportare.')
             pages, notes, toc = [[]], [], []
             used = 0
+            imported_document = book.get('interpretation') == 'EXTRACTED_DOCUMENT_TEXT_NOT_ORIGINAL_LAYOUT'
             grouped = {}
             for paragraph in book['paragraphs']:
                 grouped.setdefault(paragraph.get('heading') or 'Introduzione', []).append(paragraph)
-            for p in (paragraph for group in grouped.values() for paragraph in group):
+            ordered = book['paragraphs'] if imported_document else (paragraph for group in grouped.values() for paragraph in group)
+            for p in ordered:
                 if pages[-1] and used+len(p['text'])>3600:
                     pages.append([]);used=0
                 heading=p.get('heading') or 'Introduzione'
@@ -276,7 +279,7 @@ class EncyclopediaService:
                         source_hash=identity,canonical_excerpt=bool(p.get('canonical_excerpt'))))
                 pages[-1].append(dict(heading=heading,sentences=items));used+=len(p['text'])
             from .encyclopedia_prose import prepare_pages
-            pages,toc,presentation=prepare_pages(pages,notes)
+            pages,toc,presentation=prepare_pages(pages,notes,budget=2400 if imported_document else 3600,preserve_order=imported_document)
             with self.db() as db:
                 row=db.execute('SELECT page FROM shelf WHERE library=? AND article=?',(library_id,article_id)).fetchone()
             return dict(title=book['title'],article_id=article_id,library_id=library_id,
@@ -444,7 +447,8 @@ class EncyclopediaService:
             raise ValueError('Scegli un file o una cartella e assegna un nome alla libreria.')
         with self.import_lock:
             from .document_import import import_documents
-            return import_documents(self.registry,path,name.strip())
+            with self.lock:
+                return import_documents(self.registry,path,name.strip())
 
     def export(self, **kwargs):
         return self.export_document(self.article(**kwargs))

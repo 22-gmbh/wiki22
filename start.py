@@ -14,7 +14,7 @@ sys.dont_write_bytecode = True
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Wiki22 1.7 — Wikipedia pronta da leggere')
+    parser = argparse.ArgumentParser(description='Wiki22 1.10 — scegli la tua biblioteca')
     parser.add_argument('--no-browser', action='store_true')
     parser.add_argument('--verify', action='store_true')
     parser.add_argument('--stop', action='store_true')
@@ -53,8 +53,8 @@ def main():
         return 0
     # Factory registry is restored only if absent; never replace a user's imports.
     registry = root/'data/libraries/registry.json'
-    if not registry.is_file():
-        raise ValueError('Registro iniziale mancante: estrai di nuovo lo ZIP originale in una nuova cartella.')
+    from wiki22.knowledge.library_registry import LibraryRegistry
+    LibraryRegistry(root).ensure()
     url = ensure_service(root, port=args.port)
     print('Wiki22 è pronto: ' + url, flush=True)
     if not args.no_browser and not webbrowser.open(url):

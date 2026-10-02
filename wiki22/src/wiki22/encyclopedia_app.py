@@ -59,6 +59,10 @@ class EncyclopediaHTTP(ThreadingHTTPServer):
         if address[0]!='127.0.0.1':
             raise ValueError('Wiki22 accetta soltanto connessioni locali.')
         self.service=service
+        from .library_download import LibraryDownloads
+        from .source_probe import SourceProbe
+        self.downloads=LibraryDownloads(service)
+        self.probe=SourceProbe(service)
         self.token=secrets.token_urlsafe(32)
         self.jobs={}
         self.exports={}
@@ -76,7 +80,9 @@ class EncyclopediaHTTP(ThreadingHTTPServer):
         return dict(job=key)
 
     def server_close(self):
+        self.downloads.close()
         self.worker.shutdown(wait=True,cancel_futures=True)
+        self.probe.close()
         self.service.close()
         super().server_close()
 
@@ -146,6 +152,11 @@ class Handler(BaseHTTPRequestHandler):
                 threading.Thread(target=self.server.shutdown,daemon=True).start()
                 return
             if path=='/api/bootstrap':result=dict(version=VERSION,libraries=s.libraries(),preferences=s.preferences(),shelf=s.shelf())
+            elif path=='/api/catalog':result=self.server.downloads.listing()
+            elif path=='/api/catalog/start':result=self.server.downloads.start(value.get('id'))
+            elif path=='/api/catalog/pause':result=self.server.downloads.pause()
+            elif path=='/api/probe/scan':result=self.server.job(lambda:self.server.probe.scan(**value))
+            elif path=='/api/probe/create':result=self.server.job(lambda:self.server.probe.create(**value))
             elif path=='/api/library/manage':
                 from .encyclopedia_management import manage
                 result=manage(s,**value)
